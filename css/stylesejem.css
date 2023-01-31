@@ -145,8 +145,6 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
     flex-direction: column;
     position: fixed;
     top: 80px;
-    justify-content: space-around;
-    height: 45vh;
     padding-left: 0px;
 
 /* HIDDEN INITIALLY  :  */
@@ -164,8 +162,7 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 .menu > div > ul > li > a{
     color: #ffffff;
     text-decoration: none;
-    font-size: 0.7rem;
-    text-align: left;
+    font-size: 1.1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -234,35 +231,63 @@ a {
 at_mainheader .at_grey_li strong {
     font-family: Rubik-Medium,sans-serif;
     font-weight: 500;
+}
+
+
+
+@media screen and (min-width: 375px) {
+    .menu > div > ul > li > a{
+    font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .toggler {
+    left: 15px;
+    }
+
+    .hamburger {
+        left: 15px;
     }
     
-    main > ul > li {
-        width: 40vw;
+    .menu {
+        width: 13%;
+    }
+
+    .menu > div > ul > li {
+        list-style: none;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }   
+
+    .menu > div > ul {
+    padding-left: 15px;
+    }
+
+    .menu > div > ul > li > a {
+        font-size: 1rem;
     }
     
-    main > ul > li > a {
-        width: 70vw;
+    .toggler:checked ~ .menu {
+        width: 20%;
     }
-    
-    main > ul > li > a > img {
-        width: 50px;
+
+    .toggler:checked ~ .menu > div > ul{
+        width: 20vw;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .toggler:checked ~ .menu {
-        width: 26%;
-    }
-
     .menu > div > ul > li > img {
         width: 60px;
     }
 
     .menu > div > ul > li > a {
         font-size: 1.5rem;
-        padding: 0 35px;
     }
-
 }
 
 
@@ -285,16 +310,11 @@ at_mainheader .at_grey_li strong {
     }
 
     .toggler:checked ~ .menu {
-        width: 26%;
+        width: 16%;
     }
 
     .toggler:checked ~ .menu > div > ul {
         width: 15vw;
-    }
-
-    .menu > div > ul > li > a {
-        font-size: 1.5rem;
-        padding: 0 89px;
     }
 }
 
@@ -303,40 +323,8 @@ at_mainheader .at_grey_li strong {
         width: 6%;
     }
 
-    .toggler:checked ~ .menu > div > ul {
-        width: 26%;
-    }
-
-    .menu > div > ul > li > a {
-        font-size: 1.5rem;
-        padding: 0 156px;
-    }
-
-    main {
-        top: 10%;
-        left: 27%;
-    }
-    
-    main > ul {
-        height: 7vh;
-        width: 120%;
-        flex-direction: row;    
-    }
-    
-    main > ul > li {
-        width: 12vw;
-    }
-    
-    main > ul > li > a {
-        display: flex;
-        align-items: center;
+    .menu > div > ul > li {
         justify-content: space-around;
-        width: 70vw;
-        color: rgb(0, 0, 0);
-    }
-    
-    main > ul > li > a > img {
-        width: 50px;
     }
 }
 
@@ -385,7 +373,7 @@ at_mainheader .at_grey_li strong {
         flex-direction: column;
         position: fixed;
         top: 80px;
-        padding-left: 25px;
+        padding-left: 15px;
 
     /* HIDDEN INITIALLY  :  */
 
@@ -398,12 +386,6 @@ at_mainheader .at_grey_li strong {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
-
-    .menu > div > ul > li > a {
-        font-size: 1.8rem;
-        padding: 0 226px;
-    }
-    
 }
