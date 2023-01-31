@@ -253,11 +253,21 @@ main > ul > li {
     padding: 10px;
     border: 2px solid black;
     border-radius: 5px;
-    background-color: #ffda22;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 70vw;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+}
+
+main > ul > li:hover {
+    /* transition: ; */
+    background-color: rgba(0, 191, 255, 0.587);
+    cursor: pointer;
 }
 
 main > ul > li > a {
@@ -265,6 +275,7 @@ main > ul > li > a {
     align-items: center;
     justify-content: space-around;
     width: 70vw;
+    color: rgb(0, 0, 0);
 }
 
 main > ul > li > a > img {
@@ -422,7 +433,6 @@ main > ul > li > a > img {
         align-items: center;
         justify-content: space-around;
         width: 70vw;
-        color: rgb(0, 0, 0);
     }
     
     main > ul > li > a > img {
