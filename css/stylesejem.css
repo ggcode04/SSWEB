@@ -145,8 +145,6 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
     flex-direction: column;
     position: fixed;
     top: 80px;
-    justify-content: space-around;
-    height: 45vh;
     padding-left: 0px;
 
 /* HIDDEN INITIALLY  :  */
@@ -164,8 +162,7 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 .menu > div > ul > li > a{
     color: #ffffff;
     text-decoration: none;
-    font-size: 0.7rem;
-    text-align: left;
+    font-size: 1.1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -227,6 +224,7 @@ p {
 }
 
 a {
+    color: #33b55d;
     text-decoration: none;
 }
 
@@ -235,52 +233,12 @@ at_mainheader .at_grey_li strong {
     font-weight: 500;
 }
 
-main {
-    position: fixed;
-    top: 10%;
-    left: 28%;
-}
 
-main > ul {
-    display: flex;
-    flex-direction: column;
-    height: 50vh;
-    justify-content: space-around;
-    align-items: center;
-}
-
-main > ul > li {
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: #ffda22;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 70vw;
-}
-
-main > ul > li > a {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 70vw;
-}
-
-main > ul > li > a > img {
-    width: 50px;
-}
 
 @media screen and (min-width: 375px) {
     .menu > div > ul > li > a{
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     }
-}
-
-@media screen and (min-width: 425px) {
-    .menu > div > ul > li > a{
-        font-size: 0.9rem;
-        }
 }
 
 @media screen and (min-width: 768px) {
@@ -293,7 +251,7 @@ main > ul > li > a > img {
     }
     
     .menu {
-        width: 10%;
+        width: 13%;
     }
 
     .menu > div > ul > li {
@@ -305,54 +263,31 @@ main > ul > li > a > img {
         justify-content: space-between;
     }   
 
+    .menu > div > ul {
+    padding-left: 15px;
+    }
+
     .menu > div > ul > li > a {
-        font-size: 1.2rem;
-        padding: 0 15px;
+        font-size: 1rem;
     }
     
     .toggler:checked ~ .menu {
-        width: 26%;
+        width: 20%;
     }
 
     .toggler:checked ~ .menu > div > ul{
         width: 20vw;
     }
-
-    main {
-        left: 35%;
-    }
-    
-    main > ul {
-        height: 40vh;
-    }
-    
-    main > ul > li {
-        width: 40vw;
-    }
-    
-    main > ul > li > a {
-        width: 70vw;
-    }
-    
-    main > ul > li > a > img {
-        width: 50px;
-    }
 }
 
 @media screen and (min-width: 1024px) {
-    .toggler:checked ~ .menu {
-        width: 26%;
-    }
-
     .menu > div > ul > li > img {
         width: 60px;
     }
 
     .menu > div > ul > li > a {
         font-size: 1.5rem;
-        padding: 0 35px;
     }
-
 }
 
 
@@ -375,16 +310,11 @@ main > ul > li > a > img {
     }
 
     .toggler:checked ~ .menu {
-        width: 26%;
+        width: 16%;
     }
 
     .toggler:checked ~ .menu > div > ul {
         width: 15vw;
-    }
-
-    .menu > div > ul > li > a {
-        font-size: 1.5rem;
-        padding: 0 89px;
     }
 }
 
@@ -393,40 +323,8 @@ main > ul > li > a > img {
         width: 6%;
     }
 
-    .toggler:checked ~ .menu > div > ul {
-        width: 26%;
-    }
-
-    .menu > div > ul > li > a {
-        font-size: 1.5rem;
-        padding: 0 156px;
-    }
-
-    main {
-        top: 10%;
-        left: 27%;
-    }
-    
-    main > ul {
-        height: 7vh;
-        width: 120%;
-        flex-direction: row;    
-    }
-    
-    main > ul > li {
-        width: 12vw;
-    }
-    
-    main > ul > li > a {
-        display: flex;
-        align-items: center;
+    .menu > div > ul > li {
         justify-content: space-around;
-        width: 70vw;
-        color: rgb(0, 0, 0);
-    }
-    
-    main > ul > li > a > img {
-        width: 50px;
     }
 }
 
@@ -475,7 +373,7 @@ main > ul > li > a > img {
         flex-direction: column;
         position: fixed;
         top: 80px;
-        padding-left: 25px;
+        padding-left: 15px;
 
     /* HIDDEN INITIALLY  :  */
 
@@ -488,12 +386,6 @@ main > ul > li > a > img {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
-
-    .menu > div > ul > li > a {
-        font-size: 1.8rem;
-        padding: 0 226px;
-    }
-    
 }
