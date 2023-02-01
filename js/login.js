@@ -41,3 +41,10 @@ $('.tab a').on('click', function (e) {
   $(target).fadeIn(600);
   
 });
+
+const admin = admin
+const user = costumer
+
+// function name(params) {
+  
+// }

@@ -251,7 +251,6 @@ main > ul {
 
 main > ul > li {
     padding: 10px;
-    border: 2px solid black;
     border-radius: 5px;
     background-color: #ffffff;
     display: flex;
@@ -405,7 +404,7 @@ main > ul > li > a > img {
     }
 
     .toggler:checked ~ .menu > div > ul {
-        width: 26%;
+        width: 20%;
     }
 
     .menu > div > ul > li > a {
@@ -414,8 +413,8 @@ main > ul > li > a > img {
     }
 
     main {
-        top: 10%;
-        left: 27%;
+        top: 60%;
+        left: 24%;
     }
     
     main > ul {
@@ -446,6 +445,10 @@ main > ul > li > a > img {
         width: 95px;
     }
 
+    .toggler:checked ~ .menu {
+        width: 20%;
+    }
+
     .hamburger{
         position: absolute;
         top: 0;
@@ -472,6 +475,8 @@ main > ul > li > a > img {
         background: rgb(0, 126, 176);
         width: 5%;
         height: 100vh;
+        position: fixed;
+        top: 0;
 
     /* APPLYING TRANSITION TO THE MENU :  */
 
@@ -484,7 +489,7 @@ main > ul > li > a > img {
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: 80px;
+        top: 10%;
         padding-left: 25px;
 
     /* HIDDEN INITIALLY  :  */
@@ -502,8 +507,98 @@ main > ul > li > a > img {
     }
 
     .menu > div > ul > li > a {
-        font-size: 1.8rem;
-        padding: 0 226px;
+        font-size: 1.5rem;
+        padding: 0 150px;
     }
     
+    .action {
+        position: fixed;
+        top: 20px;
+        right: 30px;
+    }
+
+    .action .profile {
+        position: relative;
+        width: 200px;
+        height: 60px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .action .profile p {
+        position: absolute;
+        top: 2px;
+        left: 45%;
+        width: 0;
+        height: 0;
+        object-fit: cover;
+        font-size: 24px;
+    }
+
+    .action .dropdown {
+        position: fixed;
+        top: 120px;
+        right: -10px;
+        padding: 10px 20px;
+        background: #fff;
+        width: 200px;
+        box-sizing: 0 5px 25px rgba(0,0,0,1);
+        border-radius: 15px;
+        transform: 0.5s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .action .dropdown.active {
+        top: 85px;
+        visibility: visible;
+        opacity: 1;
+        right: 30px;
+        width: 10%;
+    }
+
+    .action .dropdown::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        transform: rotate(45deg);
+    }
+
+    .action .dropdown ul p {
+        text-align: center;
+    }
+    
+    .action .dropdown ul li {
+        list-style: none;
+        padding: 10px 0;
+        border-top: 1px solid rgba(0,0,0,0.5);
+        direction: flex;
+        align-items: center;
+    }
+
+    .action .dropdown ul li img {
+        max-width: 20px;
+        margin-right: 10px;
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+
+    .action .dropdown ul li:hover img {
+        opacity: 1;
+    }
+
+    .action .dropdown ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+        transition: 0.5s;
+    }
+
+    .action .dropdown ul li:hover a {
+        color: #ff5d94;
+    }
 }
