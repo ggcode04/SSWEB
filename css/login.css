@@ -24,7 +24,7 @@ a:hover {
   background: rgba(19, 35, 47, 0.9);
   padding: 40px;
   max-width: 600px;
-  margin: 350px auto;
+  margin: 200px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
@@ -168,4 +168,8 @@ textarea {
 .forgot {
   margin-top: -20px;
   text-align: right;
+}
+
+@media screen and (min-width: 1920px) {
+  
 }

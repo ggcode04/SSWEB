@@ -134,7 +134,7 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 /* IF THE TOGGLER IS CHECKED, THEN INCREASE THE WIDTH OF THE MENU TO 30% , CREATING A SMOOTH EFFECT :  */
 
 .toggler:checked ~ .menu{
-    width: 26%;
+    width: 27%;
 }
 
 
@@ -144,7 +144,7 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 80px;
+    top: 90px;
     justify-content: space-around;
     height: 45vh;
     padding-left: 0px;
@@ -184,7 +184,7 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 }
 
 .toggler:checked ~ .menu > div > ul > li > a:hover{
-    color: #33b55d;
+    color: rgb(0 54 176);
 }
 
 .ml-auto {
@@ -237,14 +237,14 @@ at_mainheader .at_grey_li strong {
 
 main {
     position: fixed;
-    top: 10%;
-    left: 28%;
+    top: 22%;
+    left: 33%;
 }
 
 main > ul {
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 30vh;
     justify-content: space-around;
     align-items: center;
 }
@@ -256,7 +256,7 @@ main > ul > li {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 70vw;
+    width: 60vw;
     -webkit-transition: background-color 1s ease-out;
     -moz-transition: background-color 1s ease-out;
     -o-transition: background-color 1s ease-out;
@@ -281,7 +281,103 @@ main > ul > li > a > img {
     width: 50px;
 }
 
+.action {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+}
+
+.action .profile {
+    position: relative;
+    width: 70px;
+    height: 35px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.action .profile p {
+    position: absolute;
+    top: 2px;
+    width: 0;
+    height: 0;
+    object-fit: cover;
+    font-size: 24px;
+}
+
+.action .dropdown {
+    position: fixed;
+    top: 120px;
+    right: -10px;
+    padding: 10px 20px;
+    background: #fff;
+    width: 200px;
+    box-sizing: 0 5px 25px rgba(0,0,0,1);
+    border-radius: 15px;
+    transform: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.action .dropdown.active {
+    top: 85px;
+    visibility: visible;
+    opacity: 1;
+    right: 10px;
+    width: 45%;
+}
+
+.action .dropdown::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+}
+
+.action .dropdown ul p {
+    text-align: center;
+}
+
+.action .dropdown ul li {
+    list-style: none;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    direction: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action .dropdown ul li img {
+    max-width: 20px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.action .dropdown ul li:hover img {
+    opacity: 1;
+}
+
+.action .dropdown ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.action .dropdown ul li:hover a {
+    color: #ff5d94;
+}
+
 @media screen and (min-width: 375px) {
+    .menu > div > ul {
+        top: 100px;
+    }
+
     .menu > div > ul > li > a{
     font-size: 0.8rem;
     }
@@ -317,7 +413,7 @@ main > ul > li > a > img {
 
     .menu > div > ul > li > a {
         font-size: 1.2rem;
-        padding: 0 15px;
+        /* padding: 0 15px; */
     }
     
     .toggler:checked ~ .menu {
@@ -360,7 +456,7 @@ main > ul > li > a > img {
 
     .menu > div > ul > li > a {
         font-size: 1.5rem;
-        padding: 0 35px;
+        /* padding: 0 35px; */
     }
 
 }
@@ -377,7 +473,7 @@ main > ul > li > a > img {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
     }   
 
     .menu > div > ul {
@@ -385,7 +481,7 @@ main > ul > li > a > img {
     }
 
     .toggler:checked ~ .menu {
-        width: 26%;
+        width: 15%;
     }
 
     .toggler:checked ~ .menu > div > ul {
@@ -393,8 +489,12 @@ main > ul > li > a > img {
     }
 
     .menu > div > ul > li > a {
-        font-size: 1.5rem;
-        padding: 0 89px;
+        font-size: 1.2rem;
+        /* padding-right: 130px; */
+    }
+
+    .menu > div > ul {
+        top: 150px;
     }
 }
 
@@ -404,16 +504,16 @@ main > ul > li > a > img {
     }
 
     .toggler:checked ~ .menu > div > ul {
-        width: 20%;
+        width: 15%;
     }
 
     .menu > div > ul > li > a {
-        font-size: 1.5rem;
-        padding: 0 156px;
+        font-size: 1.2rem;
+        padding-left: 50px;
     }
 
     main {
-        top: 60%;
+        top: 70%;
         left: 24%;
     }
     
@@ -421,6 +521,10 @@ main > ul > li > a > img {
         height: 7vh;
         width: 120%;
         flex-direction: row;    
+    }
+
+    .menu > div > ul {
+        top: 150px;
     }
     
     main > ul > li {
@@ -437,6 +541,100 @@ main > ul > li > a > img {
     main > ul > li > a > img {
         width: 50px;
     }
+
+    .action {
+        position: fixed;
+        top: 20px;
+        right: 30px;
+    }
+
+    .action .profile {
+        position: relative;
+        width: 200px;
+        height: 60px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .action .profile p {
+        position: absolute;
+        top: 2px;
+        left: 45%;
+        width: 0;
+        height: 0;
+        object-fit: cover;
+        font-size: 24px;
+    }
+
+    .action .dropdown {
+        position: fixed;
+        top: 120px;
+        right: -10px;
+        padding: 10px 20px;
+        background: #fff;
+        width: 200px;
+        box-sizing: 0 5px 25px rgba(0,0,0,1);
+        border-radius: 15px;
+        transform: 0.5s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .action .dropdown.active {
+        top: 85px;
+        visibility: visible;
+        opacity: 1;
+        right: 30px;
+        width: 11%;
+    }
+
+    .action .dropdown::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        transform: rotate(45deg);
+    }
+
+    .action .dropdown ul p {
+        text-align: center;
+    }
+    
+    .action .dropdown ul li {
+        list-style: none;
+        padding: 10px 0;
+        border-top: 1px solid rgba(0,0,0,0.5);
+        direction: flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .action .dropdown ul li img {
+        max-width: 20px;
+        margin-right: 10px;
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+
+    .action .dropdown ul li:hover img {
+        opacity: 1;
+    }
+
+    .action .dropdown ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+        transition: 0.5s;
+    }
+
+    .action .dropdown ul li:hover a {
+        color: #ff5d94;
+    }
+
 }
 
 @media screen and (min-width: 2560px) {
@@ -576,7 +774,9 @@ main > ul > li > a > img {
         padding: 10px 0;
         border-top: 1px solid rgba(0,0,0,0.5);
         direction: flex;
+        display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .action .dropdown ul li img {
