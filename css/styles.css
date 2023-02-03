@@ -187,9 +187,9 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
     color: rgb(0 54 176);
 }
 
-.ml-auto {
-margin-left: auto;
-}
+/* .ml-auto {
+    margin-left: auto;
+} */
 
 .at_mainheader .at_ul_header {
 display: flex;
@@ -289,10 +289,14 @@ main > ul > li > a > img {
 
 .action .profile {
     position: relative;
-    width: 70px;
+    width: 100px;
     height: 35px;
     overflow: hidden;
     cursor: pointer;
+}
+
+.action .profile img {
+    width: 30px;
 }
 
 .action .profile p {
@@ -302,6 +306,7 @@ main > ul > li > a > img {
     height: 0;
     object-fit: cover;
     font-size: 24px;
+    right: 70px;
 }
 
 .action .dropdown {
@@ -371,6 +376,13 @@ main > ul > li > a > img {
 
 .action .dropdown ul li:hover a {
     color: #ff5d94;
+}
+
+.ml-auto .logo img {
+    width: 40%;
+    position: fixed;
+    top: 25px;
+    left: 20%;
 }
 
 @media screen and (min-width: 375px) {
@@ -443,6 +455,22 @@ main > ul > li > a > img {
     main > ul > li > a > img {
         width: 50px;
     }
+
+    .ml-auto .logo img {
+        width: 30%;
+        position: fixed;
+        top: 15px;
+        left: 12%;
+    }
+
+    .action .dropdown.active {
+        width: 30%;
+    }
+
+    main {
+        left: 40%;
+        top: 30%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -459,6 +487,19 @@ main > ul > li > a > img {
         /* padding: 0 35px; */
     }
 
+    main {
+        left: 45%;
+        top: 40%;
+    }
+
+    .action .dropdown.active {
+        width: 21%;
+    }
+
+    .ml-auto .logo img {
+        width: 25%;
+        left: 10%;
+    }
 }
 
 
@@ -490,11 +531,52 @@ main > ul > li > a > img {
 
     .menu > div > ul > li > a {
         font-size: 1.2rem;
-        /* padding-right: 130px; */
+        padding-left: 10px;
     }
 
     .menu > div > ul {
         top: 150px;
+    }
+
+    .ml-auto .logo img {
+        width: 15%;
+        position: fixed;
+        top: 15px;
+        left: 7%;
+    }
+
+    .action .profile { 
+        width: 100px;
+    }
+
+    .action .profile img {
+        width: 40px;
+        position: fixed;
+        left: 90.5%;
+    }
+
+    .action .profile p {
+        right: 70px;
+    }
+    
+    .action .dropdown.active {
+        right: 20px;
+        width: 15%;
+    }
+
+    main {
+        left: 17%;
+        top: 50%;
+    }
+
+    main > ul {
+        flex-direction: row;
+        height: 6vh;
+        width: 80vw;
+    }
+
+    main > ul > li {
+        width: 15vw;
     }
 }
 
@@ -514,7 +596,7 @@ main > ul > li > a > img {
 
     main {
         top: 70%;
-        left: 24%;
+        left: 20%;
     }
     
     main > ul {
@@ -550,22 +632,26 @@ main > ul > li > a > img {
 
     .action .profile {
         position: relative;
-        width: 200px;
-        height: 60px;
+        width: 100px;
+        height: 30px;
         overflow: hidden;
         cursor: pointer;
+    }
+
+    .action .profile img {
+        width: 30px;
     }
 
     .action .profile p {
         position: absolute;
         top: 2px;
-        left: 45%;
+        left: 30%;
         width: 0;
         height: 0;
         object-fit: cover;
         font-size: 24px;
     }
-
+    
     .action .dropdown {
         position: fixed;
         top: 120px;
@@ -584,7 +670,7 @@ main > ul > li > a > img {
         top: 85px;
         visibility: visible;
         opacity: 1;
-        right: 30px;
+        right: 10px;
         width: 11%;
     }
 
@@ -635,6 +721,14 @@ main > ul > li > a > img {
         color: #ff5d94;
     }
 
+    .ml-auto .logo img {
+        width: 10%;
+        position: fixed;
+        top: 20px;
+        left: 5%;
+    }
+
+
 }
 
 @media screen and (min-width: 2560px) {
@@ -665,6 +759,13 @@ main > ul > li > a > img {
     
     .hamburger > div::after{
         top: 10px;
+    }
+
+    .ml-auto .logo img {
+        width: 10%;
+        position: fixed;
+        top: 10px;
+        left: 5%;
     }
 
     /* MAIN MENU WITH THE WHITE BACKGROUND AND THE TEXT :  */
@@ -717,20 +818,28 @@ main > ul > li > a > img {
 
     .action .profile {
         position: relative;
-        width: 200px;
-        height: 60px;
+        width: 110px;
+        height: 35px;
         overflow: hidden;
         cursor: pointer;
+    }
+
+    .action .profile img {
+        width: 35px;
+        position: absolute;
+        left: 0px;
+        top: 0;
     }
 
     .action .profile p {
         position: absolute;
         top: 2px;
-        left: 45%;
+        left: 35%;
         width: 0;
         height: 0;
         object-fit: cover;
         font-size: 24px;
+        color: rgb(51 154 240);
     }
 
     .action .dropdown {
@@ -751,7 +860,7 @@ main > ul > li > a > img {
         top: 85px;
         visibility: visible;
         opacity: 1;
-        right: 30px;
+        right: 10px;
         width: 10%;
     }
 
