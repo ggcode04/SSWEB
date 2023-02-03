@@ -640,6 +640,7 @@ main > ul > li > a > img {
 
     .action .profile img {
         width: 30px;
+        left: 93%;
     }
 
     .action .profile p {
