@@ -235,6 +235,52 @@ a {
     font-weight: 500;
 }
 
+main {
+    position: fixed;
+    top: 22%;
+    left: 33%;
+}
+
+main > ul {
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main > ul > li {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60vw;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+}
+
+main > ul > li:hover {
+    /* transition: ; */
+    background-color: rgba(0, 191, 255, 0.587);
+    cursor: pointer;
+}
+
+main > ul > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70vw;
+    color: rgb(0, 0, 0);
+}
+
+main > ul > li > a > img {
+    width: 50px;
+}
+
 .action {
     position: fixed;
     top: 20px;
@@ -261,7 +307,7 @@ a {
     object-fit: cover;
     font-size: 24px;
     right: 70px;
-    color: #339af0;
+    color: rgb(255 181 0);
 }
 
 .action .dropdown {
@@ -401,6 +447,27 @@ a {
     .action .dropdown.active {
         width: 30%;
     }
+
+    main {
+        left: 40%;
+        top: 30%;
+    }
+    
+    main > ul {
+        height: 40vh;
+    }
+    
+    main > ul > li {
+        width: 40vw;
+    }
+    
+    main > ul > li > a {
+        width: 70vw;
+    }
+    
+    main > ul > li > a > img {
+        width: 50px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -424,6 +491,11 @@ a {
     .ml-auto .logo img {
         width: 25%;
         left: 10%;
+    }
+
+    main {
+        left: 45%;
+        top: 40%;
     }
 }
 
@@ -487,6 +559,21 @@ a {
         right: 20px;
         width: 15%;
     }
+
+    main {
+        left: 17%;
+        top: 50%;
+    }
+
+    main > ul {
+        flex-direction: row;
+        height: 6vh;
+        width: 80vw;
+    }
+
+    main > ul > li {
+        width: 15vw;
+    }
 }
 
 @media screen and (min-width: 1920px) {
@@ -533,7 +620,7 @@ a {
         height: 0;
         object-fit: cover;
         font-size: 24px;
-        color: #339af0;
+        color: rgb(255 181 0);
     }
     
     .action .dropdown {
@@ -610,6 +697,32 @@ a {
         position: fixed;
         top: 20px;
         left: 5%;
+    }
+
+    main {
+        top: 70%;
+        left: 20%;
+    }
+    
+    main > ul {
+        height: 7vh;
+        width: 120%;
+        flex-direction: row;    
+    }
+
+    main > ul > li {
+        width: 12vw;
+    }
+    
+    main > ul > li > a {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 70vw;
+    }
+    
+    main > ul > li > a > img {
+        width: 50px;
     }
 }
 

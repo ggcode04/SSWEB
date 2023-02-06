@@ -436,10 +436,6 @@ main > ul > li > a > img {
     .toggler:checked ~ .menu > div > ul{
         width: 20vw;
     }
-
-    main {
-        left: 35%;
-    }
     
     main > ul {
         height: 40vh;
