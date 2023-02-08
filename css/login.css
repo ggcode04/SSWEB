@@ -24,7 +24,7 @@ a:hover {
   background: rgba(19, 35, 47, 0.9);
   padding: 40px;
   max-width: 600px;
-  margin: 210px auto;
+  margin: 150px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
@@ -170,11 +170,31 @@ textarea {
   text-align: right;
 }
 
+.logo img {
+  width: 40vw;
+  position: fixed;
+  left: 30%;
+}
+
+@media screen and (min-width: 768px) {
+  .logo img {
+    top: 1%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .logo img {
+    width: 30vw;
+    top: 2%;
+    left: 35%;
+  }
+}
+
 @media screen and (min-width: 1920px) {
   .logo img {
     width: 20%;
     position: fixed;
-    top: 5%;
+    top: 2%;
     left: 40%;
   }
 }
