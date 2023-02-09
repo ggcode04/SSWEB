@@ -225,7 +225,7 @@ a {
         border-radius: 10px;
         box-shadow: 0px 4px 20px 1px rgba(3, 3, 3, 0.5);
         display: flex;
-        top: 8%;
+        top: 9.5%;
         left: 2.5%;
     }
 
@@ -427,6 +427,10 @@ a {
         top: 20px;
         left: 5%;
     }
+
+    .container {
+        top: 8.5%;
+    }
 }
 
 @media screen and (min-width: 2560px) {
@@ -600,5 +604,31 @@ a {
 
     .tabBtns .show {
         background-color: #5fd57c;
+    }
+
+    .tabContents .tabContainer {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #a9d9b5;
+        padding: 15px;
+    }
+
+    .tabContents .tabContainer .btnContainer {
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 10px 30px;
+        background-color: #5fd57c;
+    }
+
+    .tabContents .tabContainer .btnContainer:hover {
+        background-color: #4cb065;
+    }
+
+    .tabContents .btnContents .contents2 {
+        display: none;
+    }
+
+    .tabContents .btnContents .show2 {
+        display: block;
     }
 }

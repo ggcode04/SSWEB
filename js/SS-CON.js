@@ -10,3 +10,16 @@ function showContents (activeTab, contentsId) {
     activeTab.classList.add('show');
     document.getElementById(contentsId).classList.add('show')
 }
+
+function showTabs (activeBtn, contentsId2) {
+    var btn = document.querySelectorAll('.btnContainer');
+    var btnContents = document.querySelectorAll('.contents2');
+    var i = 0;
+    while (i < btn.length) {
+        btn[i].classList.remove('show2');
+        btnContents[i].classList.remove('show2');
+        i++
+    }
+    activeBtn.classList.add('show2');
+    document.getElementById(contentsId2).classList.add('show2');
+}
