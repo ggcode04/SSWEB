@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #f3f3f4;
+    background: linear-gradient(to right, #d9d9d9, rgb(220, 220, 220));
     color: #171e28;
     line-height: 1.3;
     font-size: 1.5rem;
@@ -181,27 +181,186 @@ a {
 }
 
 .ml-auto .logo img {
-    width: 60%;
+    width: 40%;
     position: fixed;
-    top: 1.5%;
-    left: 2%;
+    top: 1.3%;
+    left: 20%;
 }
 
+.toggler{
+    /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
+      z-index: 101;
+      height: 80px;
+      width: 75px;
+      position: absolute;
+      top: 0;
+      left: 0px;
+      cursor: pointer;
+      opacity: 0;
+}
+  
+.hamburger{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 80px;
+    width: 75px;
+    padding: 0.6rem;
+    z-index: 100;
+
+/* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+/* CREATING THE MIDDLE LINE OF THE HAMBURGER : */
+  
+.hamburger > div{
+    position: relative;
+    top: 0;
+    left: 0;
+    background: rgb(0, 126, 176);
+    height: 5px;
+    width: 60%;
+    transition: all  0.4s ease;
+    border-radius: 15px;
+}
+
+/* CREATING THE TOP AND BOTTOM LINES : 
+TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
+
+.hamburger > div::before,
+.hamburger > div::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    background: rgb(0, 126, 176);
+    width: 100%;
+    height: 5px;
+    transition: all  0.4s ease;
+    border-radius: 15px;
+}
+
+.hamburger > div::after{
+    top: 10px;
+}
+
+/* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
+
+.toggler:checked + .hamburger > div{
+    background: #ffffff;
+}
+
+.toggler:checked + .hamburger > div::before{
+    top: 0;
+    transform: rotate(45deg);
+    background: rgb(0, 126, 176);
+}
+
+/* AND ROTATING THE TOP AND BOTTOM LINES :  */
+
+.toggler:checked + .hamburger > div::after{
+    top: 0;
+    transform: rotate(135deg);
+    background: rgb(0, 126, 176);
+}
+
+/* MAIN MENU WITH THE WHITE BACKGROUND AND THE TEXT :  */
+
+.menu{
+    background: rgb(0, 126, 176);
+    width: 20%;
+    height: 100vh;
+
+/* APPLYING TRANSITION TO THE MENU :  */
+
+    transition: all 0.4s ease;
+}
+
+/* IF THE TOGGLER IS CHECKED, THEN INCREASE THE WIDTH OF THE MENU TO 30% , CREATING A SMOOTH EFFECT :  */
+
+.toggler:checked ~ .menu{
+    width: 27%;
+}
+
+/* STYLING THE LIST :  */
+
+.menu >  div > ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 90px;
+    justify-content: space-around;
+    height: 45vh;
+    padding-left: 0px;
+    align-items: center;
+
+/* HIDDEN INITIALLY  :  */
+
+    visibility: hidden;
+}
+
+.menu > div > ul > li{
+    list-style: none;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu > div > ul > li > a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.7rem;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu > div > ul > li > img {
+        visibility: visible;
+        width: 50px;
+    }
+
+/* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
+
+.toggler:checked ~ .menu > div > ul {
+    transition: visibility 0.4s ease;
+    transition-delay: 0.1s;
+    visibility: visible;
+    width: 26vw;
+}
+
+.toggler:checked ~ .menu > div > ul > li > a:hover{
+    color: rgb(0 54 176);
+}
 
 
 @media screen and (min-width: 375px) {
     .ml-auto .logo img {
         width: 50%;
-        left: 2%;
-        top: 1.5%;
+        left: 15%;
+        top: 1.3%;
+    }
+
+    .menu > div > ul {
+        top: 100px;
+    }
+
+    .menu > div > ul > li > a{
+    font-size: 0.8rem;
     }
 }
 
 @media screen and (min-width: 425px) {
     .ml-auto .logo img {
         width: 50%;
-        left: 2%;
-        top: 1.5%;
+        left: 15%;
+        top: 1.2%;
+    }
+
+    .menu > div > ul > li > a{
+        font-size: 0.9rem;
     }
 }
 
@@ -210,14 +369,14 @@ a {
         width: 30%;
         position: fixed;
         top: 15px;
-        left: 1%;
+        left: 12%;
     }
 
     .action .dropdown.active {
         width: 30%;
     }
 
-    .container {
+    /* .container {
         position: relative;
         width: 95vw;
         height: 90vh;
@@ -227,20 +386,24 @@ a {
         display: flex;
         top: 9.5%;
         left: 2.5%;
-    }
+    } */
 
-    .container .tabBtns {
+    /* .container .tabBtns {
         flex-basis: 12%;
         padding: 10px;
         background-color: #a9d9b5;
         border-right: 1px solid #a9d9b5;
-    }
+    } */
 
-    .container .tabContents {
-        flex-basis: 88%;
-        background-image: linear-gradient(to right, #d9d9d9, rgb(220, 220, 220));
+    .tabContents {
+        flex-basis: 88%;        
         padding: 20px 30px 20px 40px;
         font-size: 20px;
+        position: absolute;
+        top: 5%;
+        left: 26%;
+        width: 73vw;
+        height: 95vh;
     }
 
     .tabContents h2 {
@@ -273,17 +436,17 @@ a {
     }
 
     .tabBtns .btn:hover {
-        background-color: #4cb065;
+        background-color: rgb(20, 65, 171);
     }
 
     .tabBtns .show {
-        background-color: #5fd57c;
+        background-color: rgb(0 54 176);
     }
 
     .tabContents .tabContainer {
         display: flex;
         justify-content: space-evenly;
-        background-color: #a9d9b5;
+        background-color: rgb(0, 126, 176);
         padding: 15px;
     }
 
@@ -291,11 +454,11 @@ a {
         cursor: pointer;
         padding: 15px;
         border-radius: 10px 30px;
-        background-color: #5fd57c;
+        background-color: rgb(0, 100, 208);
     }
 
     .tabContents .tabContainer .btnContainer:hover {
-        background-color: #4cb065;
+        background-color: rgb(0 54 176);
     }
 
     .tabContents .btnContents .contents2 {
@@ -304,6 +467,40 @@ a {
 
     .tabContents .btnContents .show2 {
         display: block;
+    }
+
+    .toggler {
+        left: 15px;
+    }
+
+    .hamburger {
+        left: 15px;
+    }
+    
+    .menu {
+        width: 10%;
+    }
+
+    .menu > div > ul > li {
+        list-style: none;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }   
+
+    .menu > div > ul > li > a {
+        font-size: 1.2rem;
+        /* padding: 0 15px; */
+    }
+    
+    .toggler:checked ~ .menu {
+        width: 26%;
+    }
+
+    .toggler:checked ~ .menu > div > ul {
+        width: 26vw;
     }
 }
 
@@ -314,8 +511,8 @@ a {
 
     .ml-auto .logo img {
         width: 25%;
-        left: 1%;
-        top: 1%;
+        left: 10%;
+        top: 0.7%;
     }
 
     .fixed_headers {
@@ -375,6 +572,19 @@ a {
     .fixed_headers tbody { 
         height: auto; 
     }
+
+    .toggler:checked ~ .menu {
+        width: 26%;
+    }
+
+    .menu > div > ul > li > img {
+        width: 60px;
+    }
+
+    .menu > div > ul > li > a {
+        font-size: 1.5rem;
+        /* padding: 0 35px; */
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -382,7 +592,7 @@ a {
         width: 15%;
         position: fixed;
         top: 15px;
-        left: 1%;
+        left: 7%;
     }
 
     .action .profile { 
@@ -460,6 +670,40 @@ a {
 
     .fixed_headers tbody { 
         height: auto; 
+    }
+
+    .menu {
+        width: 8%;
+    }
+
+    .menu > div > ul > li {
+        list-style: none;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }   
+
+    .menu > div > ul {
+    padding-left: 15px;
+    }
+
+    .toggler:checked ~ .menu {
+        width: 15%;
+    }
+
+    .toggler:checked ~ .menu > div > ul {
+        width: 15vw;
+    }
+
+    .menu > div > ul > li > a {
+        font-size: 1.2rem;
+        padding-left: 10px;
+    }
+
+    .menu > div > ul {
+        top: 150px;
     }
 }
 
@@ -570,9 +814,9 @@ a {
         left: 5%;
     }
 
-    .container {
+    /* .container {
         top: 8.5%;
-    }
+    } */
 
     .fixed_headers {
         width: 750px;
@@ -631,6 +875,45 @@ a {
     .fixed_headers tbody { 
         height: auto; 
     }
+
+    main {
+        top: 70%;
+        left: 20%;
+    }
+    
+    main > ul {
+        height: 7vh;
+        width: 120%;
+        flex-direction: row;    
+    }
+    
+    main > ul > li {
+        width: 12vw;
+    }
+    
+    main > ul > li > a {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 70vw;
+    }
+    
+    main > ul > li > a > img {
+        width: 50px;
+    }
+
+    .menu {
+        width: 6%;
+    }
+
+    .toggler:checked ~ .menu > div > ul {
+        width: 12%;
+    }
+
+    .menu > div > ul > li > a {
+        font-size: 1.2rem;
+        padding-left: 50px;
+    }
 }
 
 @media screen and (min-width: 2560px) {
@@ -639,7 +922,7 @@ a {
         width: 10%;
         position: fixed;
         top: 10px;
-        left: 1%;
+        left: 5%;
     }
     
     .action {
@@ -743,7 +1026,7 @@ a {
         color: #ff5d94;
     }
 
-    .container {
+    /* .container {
         position: relative;
         width: 95vw;
         height: 90vh;
@@ -753,24 +1036,29 @@ a {
         display: flex;
         top: 8%;
         left: 2.5%;
-    }
+    } */
 
-    .container .tabBtns {
+    /* .container .tabBtns {
         flex-basis: 12%;
         padding: 10px;
         background-color: #a9d9b5;
         border-right: 1px solid #a9d9b5;
-    }
+    } */
 
-    .container .tabContents {
+    .tabContents {
         flex-basis: 88%;
-        background-image: linear-gradient(to right, #d9d9d9, rgb(220, 220, 220));
         padding: 20px 30px 20px 40px;
         font-size: 20px;
+        position: absolute;
+        top: 5%;
+        left: 20%;
+        width: 80vw;
+        height: 95vh;
     }
 
     .tabContents h2 {
         padding-bottom: 10px;
+        text-align: center;
     }
 
     .tabContents h3 {
@@ -799,17 +1087,17 @@ a {
     }
 
     .tabBtns .btn:hover {
-        background-color: #4cb065;
+        background-color: rgb(0, 100, 208);
     }
 
     .tabBtns .show {
-        background-color: #5fd57c;
+        background-color: rgb(0 54 176);
     }
 
     .tabContents .tabContainer {
         display: flex;
         justify-content: space-evenly;
-        background-color: #a9d9b5;
+        background-color: rgb(0, 126, 176);
         padding: 15px;
     }
 
@@ -817,11 +1105,11 @@ a {
         cursor: pointer;
         padding: 15px;
         border-radius: 10px 30px;
-        background-color: #5fd57c;
+        background-color: rgb(0, 100, 208);
     }
 
     .tabContents .tabContainer .btnContainer:hover {
-        background-color: #4cb065;
+        background-color: rgb(0 54 176);
     }
 
     .tabContents .btnContents .contents2 {
@@ -833,11 +1121,12 @@ a {
     }
 
     .fixed_headers {
-        width: 750px;
+        width: 75vw;
         table-layout: fixed;
         border-collapse: collapse;
         position: fixed;
-        top: 25%;
+        top: 20%;
+        left: 23%;;
     }
 
     .fixed_headers th { 
@@ -888,5 +1177,73 @@ a {
 
     .fixed_headers tbody { 
         height: auto; 
+    }
+
+    .toggler {
+        width: 95px;
+    }
+
+    .toggler:checked ~ .menu {
+        width: 20%;
+    }
+
+    .hamburger{
+        position: absolute;
+        top: 0;
+        left: 10px;
+        height: 80px;
+        width: 100px;
+        padding: 0.6rem;
+        z-index: 100;
+
+    /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hamburger > div::after{
+        top: 10px;
+    }
+
+    .menu{
+        background: rgb(0, 126, 176);
+        width: 5%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+
+    /* APPLYING TRANSITION TO THE MENU :  */
+
+        transition: all 0.4s ease;
+    }
+
+    /* STYLING THE LIST :  */
+
+    .menu >  div > ul{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 10%;
+        padding-left: 25px;
+
+    /* HIDDEN INITIALLY  :  */
+
+        visibility: hidden;
+    }
+
+    .menu > div > ul > li{
+        list-style: none;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu > div > ul > li > a {
+        font-size: 1.5rem;
+        padding: 0 150px;
     }
 }
