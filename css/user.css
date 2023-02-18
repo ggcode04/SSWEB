@@ -307,7 +307,7 @@ main > ul > li > a > img {
     object-fit: cover;
     font-size: 24px;
     right: 70px;
-    color: rgb(255 181 0);
+    color: #339af0;
 }
 
 .action .dropdown {
@@ -710,7 +710,7 @@ main > ul > li > a > img {
         height: 0;
         object-fit: cover;
         font-size: 24px;
-        color: rgb(255 181 0);
+        color: #339af0;
     }
     
     .action .dropdown {
@@ -928,7 +928,7 @@ main > ul > li > a > img {
         height: 0;
         object-fit: cover;
         font-size: 24px;
-        color: rgb(255 181 0);
+        color: #339af0;
     }
 
     .action .dropdown {
