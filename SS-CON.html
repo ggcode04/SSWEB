@@ -1,243 +1,267 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Contabilidad SSPyMes</title>
-      <link rel="stylesheet" href="css/SS-CON.css">
-      <!-- <link rel="icon" href="img/" type="image/icon-type"> -->
-  </head>
-  <body>
-    <header class="at_mainheader">
-        <app-header>
-            <div class="at_header">
-                <div>
-
-                </div>
-
-                <div class="ml-auto at_headerright">
-                    <div class="logo">
-                        <img src="img/SSPyMes.png" alt="">
-                    </div>
-                    <ul class="at_ul_header">
-                        <li class="action">
-                            <div class="profile" onclick="menuToggle();">
-                                <ul>
-                                    <li>
-                                        <img src="img/icons8-user-90-yellow.png" alt="User">
-                                        <p>User</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="dropdown">
-                                <ul>
-                                    <p>User</p> 
-                                    <li><img src="img/icons8-messaging-90 (1).png" alt=""><a href="#">Mensajeria</a></li>
-                                    <li><img src="img/icons8-pencil-90.png" alt=""><a href="#">Editar Datos de Usuario</a></li>
-                                    <li><img src="img/icons8-shutdown-90.png" alt=""><a href="#">Cerrar Sesión</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </app-header>
-    </header>
-
-    <input type="checkbox" class="toggler">
-      <div class="hamburger"><div></div></div>
-      <div class="menu">
-          <div class="container">
-              <ul class="tabBtns">
-                <li class="btn show" onclick="showContents(this, 'content_1')">Catálogos</li>
-                <li class="btn" onclick="showContents(this, 'content_2')">Movimientos</li>
-                <li class="btn" onclick="showContents(this, 'content_3')">Cierres</li>
-                <li class="btn" onclick="showContents(this, 'content_4')">Consultas</li>
-                <li class="btn" onclick="showContents(this, 'content_5')">Balances</li>
-                <li class="btn" onclick="showContents(this, 'content_6')">Reportes</li>
-                <li class="btn" onclick="showContents(this, 'content_7')">Configuración</li>
-              </ul>
-          </div>
-      </div>
-
-    <div class="tabContents">
-        <div class="contents show" id="content_1">
-            <h2>Catálogos</h2>
-            <div class="tabContainer">
-                <div class="btnContainer show2" onclick="showTabs(this, 'tab_1')">Prueba</div>
-                <div class="btnContainer" onclick="showTabs(this, 'tab_2')">Prueba2</div>
-                <div class="btnContainer" onclick="showTabs(this, 'tab_3')">Prueba3</div>
-                <div class="btnContainer" onclick="showTabs(this, 'tab_4')">Prueba4</div>
-            </div>
-            <div class="btnContents">
-                <div class="contents2 show2" id="tab_1">
-                    <table class="fixed_headers">
-                        <thead>
-                          <tr>
-                            <th>Nombre</th>
-                            <th>Color</th>
-                            <th>Descripcion</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Apple</td>
-                            <td>Red</td>
-                            <td>These are red.</td>
-                          </tr>
-                          <tr>
-                            <td>Pear</td>
-                            <td>Green</td>
-                            <td>These are green.</td>
-                          </tr>
-                          <tr>
-                            <td>Grape</td>
-                            <td>Purple / Green</td>
-                            <td>These are purple and green.</td>
-                          </tr>
-                          <tr>
-                            <td>Orange</td>
-                            <td>Orange</td>
-                            <td>These are orange.</td>
-                          </tr>
-                          <tr>
-                            <td>Banana</td>
-                            <td>Yellow</td>
-                            <td>These are yellow.</td>
-                          </tr>
-                          <tr>
-                            <td>Kiwi</td>
-                            <td>Green</td>
-                            <td>These are green.</td>
-                          </tr>
-                          <tr>
-                            <td>Plum</td>
-                            <td>Purple</td>
-                            <td>These are Purple</td>
-                          </tr>
-                          <tr>
-                            <td>Watermelon</td>
-                            <td>Red</td>
-                            <td>These are red.</td>
-                          </tr>
-                          <tr>
-                            <td>Tomato</td>
-                            <td>Red</td>
-                            <td>These are red.</td>
-                          </tr>
-                          <tr>
-                            <td>Cherry</td>
-                            <td>Red</td>
-                            <td>These are red.</td>
-                          </tr>
-                          <tr>
-                            <td>Cantelope</td>
-                            <td>Orange</td>
-                            <td>These are orange inside.</td>
-                          </tr>
-                          <tr>
-                            <td>Honeydew</td>
-                            <td>Green</td>
-                            <td>These are green inside.</td>
-                          </tr>
-                          <tr>
-                            <td>Papaya</td>
-                            <td>Green</td>
-                            <td>These are green.</td>
-                          </tr>
-                          <tr>
-                            <td>Raspberry</td>
-                            <td>Red</td>
-                            <td>These are red.</td>
-                          </tr>
-                          <tr>
-                            <td>Blueberry</td>
-                            <td>Blue</td>
-                            <td>These are blue.</td>
-                          </tr>
-                          <tr>
-                            <td>Mango</td>
-                            <td>Orange</td>
-                            <td>These are orange.</td>
-                          </tr>
-                          <tr>
-                            <td>Passion Fruit</td>
-                            <td>Green</td>
-                            <td>These are green.</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                </div>
-                <div class="contents2" id="tab_2">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt! In commodi quia 
-                        quisquam quasi explicab
-                    </p>
-                </div>
-                <div class="contents2" id="tab_3">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-                        veniam laudantium eum consectetur inve
-                    </p>
-                </div>
-                <div class="contents2" id="tab_4">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="contents" id="content_2">
-            <h2>Movimientos</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-                
-            </p>
-        </div>
-        <div class="contents" id="content_3">
-            <h2>Cierres</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-                veniam laudantium eum consecte
-            </p>
-        </div>
-        <div class="contents" id="content_4">
-            <h2>Consultas</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-                veniam laudantium eum consectetur inventore optio fuga quo sunt! 
-            </p>
-        </div>
-        <div class="contents" id="content_5">
-            <h2>Balances</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            </p>
-        </div>
-        <div class="contents" id="content_6">
-            <h2>Reportes</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-                veniam laudantium eum consectetur inventore opt
-            </p>
-        </div>
-        <div class="contents" id="content_7">
-            <h2>Configuración</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-                veniam laudantium eum consectetur inventore optio fuga quo sunt! In commodi quia 
-            </p>
-        </div>
-    </div>
-
-    <footer>
-
-    </footer>
-
-
-    <script src="js/general.js"></script>
-    <script src="js/SS-CON.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidad SSPyMes</title>
+
+    <!--CSS PERSONALIZADO -->
+    <link rel="stylesheet" href="css/SS-CON.css">
+
+    <!--JQUERY -->
+    <script src="Jquery/jquery-3.6.3.min.js"></script>
+
+    <!--JQUERY UI> -->
+    <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.css">
+    <script src="jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+</head>
+<body>
+    <header class="at_mainheader">
+        <app-header>
+            <div class="at_header">
+                <div class="ml-auto at_headerright">
+                    <div class="logo">
+                        <img src="img/SSPyMes.png" alt="">
+                    </div>
+                    <ul class="at_ul_header">
+                        <li class="action">
+                            <div class="profile" onclick="menuToggle();">
+                                <ul>
+                                    <li>
+                                        <img src="img/icons8-user-90-yellow.png" alt="User">
+                                        <p>User</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <ul>
+                                    <p>User</p> 
+                                    <li><img src="img/icons8-messaging-90 (1).png" alt=""><a href="#">Mensajeria</a></li>
+                                    <li><img src="img/icons8-pencil-90.png" alt=""><a href="#">Editar Datos de Usuario</a></li>
+                                    <li><img src="img/icons8-shutdown-90.png" alt=""><a href="#">Cerrar Sesión</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </app-header>
+    </header>
+
+    <div class="container">
+        <div class="tabBtns">
+            <div class="btn" id="btl_ca"> Catálogos</div>
+            <div class="btn" id="btl_mo"> Movimientos</div>
+            <div class="btn" id="btl_ci">Cierres</div>
+            <div class="btn" id="btl_co">Consultas</div>
+            <div class="btn" id="btl_ba">Balances</div>
+            <div class="btn" id="btl_re">Reportes</div>
+            <div class="btn" id="btl_config">Configuración</div>
+        </div>
+
+        <div id="tabContents">
+            <div class="contents show" id="content_1">
+                <!--TAB 1-->
+                <ul>
+                    <li id="t_tab0"><a href="#tab0">
+                        <p class="Titulo">
+                            Inicio
+                        </p>
+                    </a></li>
+                    <li id="t_tab1"><a href="#tab1">
+                        <p class="Titulo">
+                            Catálogos <Button class="b_c" id="c_1">X</Button>
+                        </p>
+                    </a></li>
+                    <li id="t_tab2"><a href="#tab2">
+                        <p class="Titulo">
+                            Movimientos <Button class="b_c" id="c_2">X</Button>
+                        </p>
+                    </a></li>
+                    <li id="t_tab3"><a href="#tab3">
+                        <p class="Titulo">
+                            Cierres <Button class="b_c" id="c_3">X</Button>
+                        </p>
+                    </a></li>
+                    <li id="t_tab4"><a href="#tab4">
+                        <p class="Titulo">
+                            Consultas <Button class="b_c" id="c_4">X</Button>
+                        </p>
+                    </a></li>
+                    <li id="t_tab5"><a href="#tab5">
+                        <p class="Titulo">
+                            Balances <Button class="b_c" id="c_5">X</Button>
+                        </p>
+                    </a></li>
+                    <li id="t_tab6"><a href="#tab6">
+                        <p class="Titulo">
+                            Reportes <Button class="b_c" id="c_6">X</Button>
+                        </p>
+                    </a></li>
+                </ul>
+
+                <!--TAB 0-->
+    
+                <div class="c_tab" id="tab0">
+                    ¡Bienvenido! <br>
+                    Presiona una de las categorias para empezar a trabajar en ellas.
+                </div>
+    
+                <!--TAB 1-->
+    
+                <div class="c_tab" id="tab1">
+                    Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
+                    veniam laudantium eum consectetur inventore optio fuga quo sunt!
+                </div>
+    
+                <!--TAB 2-->
+                <div class="c_tab" id="tab2">
+                    Segundo Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
+                    veniam laudantium eum consectetur inventore optio fuga quo sunt!
+                </div>
+    
+                <!--TAB 3-->
+                <div class="c_tab" id="tab3">
+                    Tercero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
+                    veniam laudantium eum consectetur inventore optio fuga quo sunt!
+                </div>
+    
+                <!--TAB 4-->
+                <div class="c_tab" id="tab4">
+                   Cuarto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
+                    veniam laudantium eum consectetur inventore optio fuga quo sunt!
+                </div>
+    
+                <!--TAB 5-->
+                <div class="c_tab" id="tab5">
+                    Quinto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
+                    veniam laudantium eum consectetur inventore optio fuga quo sunt!
+                </div>
+    
+                <!--TAB 6-->
+                <div class="c_tab" id="tab6">
+                    Sexto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
+                    veniam laudantium eum consectetur inventore optio fuga quo sunt!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script>
+        $("#tabContents").tabs();
+
+        $("#t_tab1").css("display","none");
+        $("#t_tab2").css("display","none");
+        $("#t_tab3").css("display","none");
+        $("#t_tab4").css("display","none");
+        $("#t_tab5").css("display","none");
+        $("#t_tab6").css("display","none");
+
+        $("#tab1").css("display","none");
+        $("#tab2").css("display","none");
+        $("#tab3").css("display","none");
+        $("#tab4").css("display","none");
+        $("#tab5").css("display","none");
+        $("#tab6").css("display","none");
+
+
+        ///TAB CATALOGOS///
+        $("#btl_ca").click(function(){
+            $("#t_tab1").show();
+        });
+
+        $("#t_tab1").click(function(){
+            $("#tab1").show();
+        });
+
+        $("#c_1").click(function(){
+            $("#t_tab1").hide();
+            $("#tab1").hide();
+        });
+
+
+
+        ///TAB MOVIMIENTOS///
+        $("#btl_mo").click(function(){
+            $("#t_tab2").show();
+        });
+
+        $("#t_tab2").click(function(){
+            $("#tab2").show();
+        });
+
+        $("#c_2").click(function(){
+            $("#t_tab2").hide();
+            $("#tab2").hide();
+        });
+
+
+        ///TAB CIERRES///
+        $("#btl_ci").click(function(){
+            $("#t_tab3").show();
+        });
+
+        $("#t_tab3").click(function(){
+            $("#tab3").show();
+        });
+
+        $("#c_3").click(function(){
+            $("#t_tab3").hide();
+            $("#tab3").hide();
+        });
+        
+
+
+        ///TAB CONSULTAS///
+        $("#btl_co").click(function(){
+            $("#t_tab4").show();
+        });
+
+        $("#t_tab4").click(function(){
+            $("#tab4").show();
+        });
+
+        $("#c_4").click(function(){
+            $("#tab4").hide();
+            $("#t_tab4").hide();
+        });
+        
+
+        ///TAB BALANCES///
+        $("#btl_ba").click(function(){
+            $("#t_tab5").show();
+        });
+
+        $("#t_tab5").click(function(){
+            $("#tab5").show();
+        });
+
+        $("#c_5").click(function(){
+            $("#t_tab5").hide();
+            $("#tab5").hide();
+        });
+
+        ///TAB REPORTES///
+        $("#btl_re").click(function(){
+            $("#t_tab6").show();
+        });
+
+        $("#t_tab6").click(function(){
+            $("#tab6").show();
+        });
+
+        $("#c_6").click(function(){
+            $("#t_tab6").hide();
+            $("#tab6").hide();
+        });
+
+
+
+
+    </script>
+
+</body>
 </html>

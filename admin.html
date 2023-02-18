@@ -7,6 +7,7 @@
         <title>Admin-SSPymes</title>
         <link rel="stylesheet" href="css/admin.css">
         <link rel="stylesheet" href="css/slider.css">
+
         <!-- <link rel="icon" href="img/" type="image/icon-type"> -->
     </head>
     <body>
@@ -46,23 +47,42 @@
             </app-header>
         </header>
 
+        
         <input type="checkbox" class="toggler">
         <div class="hamburger"><div></div></div>
         <div class="menu">
             <div>
                 <ul>
-                    <li><img src="img/icons8-business-building-96.png" alt="Business"><a href="#">Empresas</a></li>
-                    <li><img src="img/icons8-people-96.png" alt="Users"><a href="#">Usuarios</a></li>
-                    <li><img src="img/icons8-user-96.png" alt="Permissions"><a href="#">Permisos</a></li>
-                    <li><img src="img/icons8-cent-90.png" alt="Account"><a href="#">Cuenta</a></li>
+                    <li><a href="#"><img src="img/icons8-business-building-96.png" alt="Business"><div class="t_menu">Empresas</div></a></li>
+                    <li><a href="#"><img src="img/icons8-people-96.png" alt="Users"><div class="t_menu">Usuario</div></a></li>
+                    <li><a href="#"><img src="img/icons8-user-96.png" alt="Permissions"><div class="t_menu">Permisos</div></a></li>
+                    <li><a href="#"><img src="img/icons8-cent-90.png" alt="Account"><div class="t_menu">Cuenta</div></a></li>
                     <!-- <li><img src="img/icons8-messaging-90.png" alt="Message"><a href="#">Mensajería</a></li> -->
-                    <li><img src="img/icons8-notepad-96.png" alt=""><a href="#">Auditoría</a></li>
-                    <li><img src="img/icons8-settings-96.png" alt="Configuration"><a href="#">Configuración</a></li>
+                    <li><a href="#"><img src="img/icons8-notepad-96.png" alt=""><div class="t_menu">Auditoría</div></a></li>
+                    <li><a href="#"><img src="img/icons8-settings-96.png" alt="Configuration"><div class="t_menu">Configuración</div></a></li>
                 </ul>
             </div>
         </div>
+            
+        <div id="id_empresa">
+            <div id="logo_empresa">
+                <img src="img/building.png" alt="">
+            </div>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Soluciones SS</option>
+                <option value="1">Empresa #1</option>
+                <option value="2">Empresa #2</option>
+                <option value="3">Empresa #3</option>
+            </select>
+
+
+
+            <!--<div id="s_empresa"></div><img id="ico_arrow" src="img/icon_arrow.png" alt="">-->
+        </div>
 
         <div class="slider">
+
+
             <div class="slides">
                 <input type="radio" name="radio-btn" id="radio1">
                 <input type="radio" name="radio-btn" id="radio2">
@@ -102,15 +122,21 @@
                 <li><a href=""><img src="img/Gasto.png" alt="">Gastos</a></li>
                 <li><a href=""><img src="img/icons8-bank-90.png" alt="">Bancos</a></li>
                 <li><a href=""><img src="img/Activos.png" alt="">Activos Fijos</a></li>
-                <li><a href=""><img src="img/Presupuesto.png" alt="">Presupuesto</a></li>
+                <li><a href=""><img src="img/Presupuesto.png" alt="">Tributario</a></li>
             </ul>
         </main>
+    
+
+        
+
+        
 
         <footer>
 
         </footer>
 
-
+        
+        <script src="Jquery/jquery-3.6.3.min.js"></script>
         <script src="js/general.js"></script>
         <script src="js/admin.js"></script>
     </body>
