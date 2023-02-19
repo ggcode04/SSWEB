@@ -49,16 +49,14 @@ $('#form_login').submit( function (e) {
   e.preventDefault();
 
   if ( $('#i_correo').val() == "admin@gmail.com" && $('#i_contra').val() == "admin123"){
-    alert ("Inicio de sesion exitoso (Modo administrador)");
-    location.href = "http://stag2.solucionesss.com/admin.html";
+    location.href = "./admin.html";
     return false;
   }else if($('#i_correo').val() == "user@gmail.com" && $('#i_contra').val() == "user123"){
-    alert ("Inicio de sesión exitoso");
-    location.href = "http://stag2.solucionesss.com/user.html";
+    location.href = "./user.html";
     return false;
   }else{
     attempt --;
-    alert("You have left "+attempt+" attempt;");
+    alert("Usted Tiene Disponibles "+attempt+" Intentos");
     if( attempt == 0){
       $('#i_correo').hide();
       $('#i_contra').hide();
