@@ -69,7 +69,3 @@ $('#form_login').submit( function (e) {
 });
 const admin = admin
 const user = costumer
-
-// function name(params) {
-  
-// }
