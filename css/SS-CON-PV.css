@@ -39,9 +39,9 @@ body {
 }
 
 .at_mainheader .at_ul_header {
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .at_mainheader .at_ul_header>.at_li_header {
