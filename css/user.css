@@ -237,7 +237,7 @@ a {
 
 main {
     position: fixed;
-    top: 22%;
+    top: 23%;
     left: 33%;
 }
 
@@ -384,21 +384,22 @@ main > ul > li > a > img {
 .ml-auto .logo img {
     width: 40%;
     position: fixed;
-    top: 25px;
-    left: 20%;
+    top: 20px;
+    left: 5%;
 }
 
 #id_empresa{
     display: flex;
     position: fixed;
     z-index: 1;
-    bottom: 190px;
-    left: 130px;
+    top: 7%;
+    left: 100px;
+    height: 3vh;
 }
 
 #logo_empresa img{
-    height: 50px;
-    width: 50px;
+    /* height: 50px; */
+    width: 45px;
     padding: 2px;
     margin-right: 5px;
     background-color: white;
@@ -411,7 +412,7 @@ main > ul > li > a > img {
   width: 100%;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   -moz-padding-start: calc(0.75rem - 3px);
-  font-size: 20px;
+  font-size: 15px;
   color: #0c59a7;
   font-weight: bold;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
@@ -456,9 +457,9 @@ main > ul > li > a > img {
         display: flex;
         position: fixed;
         z-index: 1;
-    
-        bottom: 50px;
-        left: 75px;
+        top: 7%;
+        left: 130px;
+        height: 3vh;
     }
 }
 
@@ -471,9 +472,9 @@ main > ul > li > a > img {
         display: flex;
         position: fixed;
         z-index: 1;
-    
-        bottom: 50px;
-        left: 75px;
+        top: 7%;
+        left: 170px;
+        height: 3vh;
     }
 }
 
@@ -516,7 +517,7 @@ main > ul > li > a > img {
         width: 30%;
         position: fixed;
         top: 15px;
-        left: 12%;
+        left: 3%;
     }
 
     .action .dropdown.active {
@@ -545,7 +546,12 @@ main > ul > li > a > img {
     }
 
     #id_empresa{
-    
+        display: flex;
+        position: fixed;
+        z-index: 1;
+        top: 7%;
+        left: 270px;
+        height: 3vh;
     }
 }
 
@@ -569,7 +575,7 @@ main > ul > li > a > img {
 
     .ml-auto .logo img {
         width: 25%;
-        left: 10%;
+        left: 2%;
     }
 
     main {
@@ -578,7 +584,9 @@ main > ul > li > a > img {
     }
 
     #id_empresa{
-    
+        top: 7%;
+        left: 350px;
+        height: 3vh;
     }
 }
 
@@ -621,7 +629,7 @@ main > ul > li > a > img {
         width: 15%;
         position: fixed;
         top: 15px;
-        left: 7%;
+        left: 1%;
     }
 
     .action .profile { 
@@ -659,14 +667,9 @@ main > ul > li > a > img {
     }
 
     #id_empresa{
-        display: flex;
-        position: fixed;
-        z-index: 1;
-    
-        bottom: 1240px;
-        left: 450px;
         top: 15%;
-        height: 50px;
+        left: 280px;
+        height: 6%;
     }
 }
 
@@ -787,10 +790,10 @@ main > ul > li > a > img {
     }
 
     .ml-auto .logo img {
-        width: 10%;
+        width: 15%;
         position: fixed;
-        top: 20px;
-        left: 5%;
+        top: 7px;
+        left: 1%;
     }
 
     main {
@@ -820,7 +823,9 @@ main > ul > li > a > img {
     }
 
     #id_empresa{
-    
+        top: 15%;
+        left: 400px;
+        height: 4.5%;
     }
 }
 
@@ -858,7 +863,7 @@ main > ul > li > a > img {
         width: 10%;
         position: fixed;
         top: 10px;
-        left: 5%;
+        left: 1%;
     }
 
     /* MAIN MENU WITH THE WHITE BACKGROUND AND THE TEXT :  */
@@ -1005,7 +1010,8 @@ main > ul > li > a > img {
     }
 
     #id_empresa{
-        display: flex;
-        position: fixed;
+        top: 15%;
+        left: 450px;
+        height: 3.5%;
     }
 }

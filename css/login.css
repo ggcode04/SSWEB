@@ -31,7 +31,7 @@ a:hover {
   /*background: rgba(19, 35, 47, 0.9);*/
   padding: 40px;
   max-width: 600px;
-  margin: 150px auto;
+  margin: 130px auto;
   left: 20px;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
@@ -185,11 +185,12 @@ textarea {
 
 .logo img {
   background-color: white;
-  border-radius: 50px;
+  border-radius: 30px;
   border: solid 4px rgb(0, 126, 176);
   width: 300px;
   margin-left: 110px;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -199,4 +200,13 @@ textarea {
 }
 
 @media screen and (min-width: 1920px) {
+  .form {
+    margin: 50px auto;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .form {
+    margin: 150px auto;
+  }
 }

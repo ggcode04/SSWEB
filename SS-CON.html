@@ -2,137 +2,139 @@
 
 <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contabilidad SSPyMes</title>
-
-
+        <title>Contabilidad SSPyMes</title>
 
 
 
-    <!--CSS PERSONALIZADO -->
-
-    <link rel="stylesheet" href="css/SS-CON.css">
-
-    <script src="js/general.js"></script>
-
-    
 
 
+        <!--CSS PERSONALIZADO -->
 
-    <!--BOOSTRAP -->
+        <link rel="stylesheet" href="css/SS-CON.css">
 
-    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.css">
-
-    <script src="bootstrap-5.2.2-dist/js/bootstrap.js"></script>
-
-    <script src="bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-    <!--JQuery -->
-
-    <script src="Jquery/jquery-3.6.3.min.js"></script>
-
-
-
-    <!-- JQuery UI -->
-
-    <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.css">
-
-    <script src="jquery-ui-1.13.2.custom/jquery-ui.js"></script>
-
-</head>
-
-<body>
-
-    <div class="row">
-
-        <header class="at_mainheader">
-
-            <div class="at_header">
-
-                <div class="ml-auto at_headerright">
-
-                    <nav class="navbar bg-body-tertiary fixed-top">
-
-                        <div class="col-md-1">
-
-                            <div class="container-fluid">
-
-                                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-
-                                    <span class="navbar-toggler-icon"></span>
-
-                                </button>
-
-                              
-
-                                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-
-                                    <div class="offcanvas-header">
-
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-
-                                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SS-CON</h5>
-
-                                    </div>
+        <script src="js/general.js"></script>
 
         
 
-                                    <div class="offcanvas-body">
 
-                                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
-                                            <li class="nav-item">
+        <!--BOOSTRAP -->
 
-                                            <a class="nav-link active" id="Opcion_Cata" aria-current="page" href="#">Catálogos</a>
+        <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.css">
 
-                                            </li>
+        <script src="bootstrap-5.2.2-dist/js/bootstrap.js"></script>
 
-                                            <li class="nav-item">
+        <script src="bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
 
-                                                <a class="nav-link active" id="Opcion_Movi" aria-current="page" href="#">Movimientos</a>
 
-                                            </li>
 
-                                            <li class="nav-item">
+        <!--JQuery -->
 
-                                                <a class="nav-link active" id="Opcion_Cierres" aria-current="page" href="#">Cierres</a>
+        <script src="Jquery/jquery-3.6.3.min.js"></script>
 
-                                            </li>
 
-                                            <li class="nav-item">
 
-                                                <a class="nav-link active" id="Opcion_Consu" aria-current="page" href="#">Consultas</a>
+        <!-- JQuery UI -->
 
-                                            </li>
+        <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.css">
 
-                                            <li class="nav-item">
+        <script src="jquery-ui-1.13.2.custom/jquery-ui.js"></script>
 
-                                                <a class="nav-link active" id="Opcion_Bala" aria-current="page" href="#">Balances</a>
+    </head>
 
-                                            </li>
+    <body>
 
-                                            <li class="nav-item">
+        <div class="row">
 
-                                                <a class="nav-link active" id="Opcion_Repo" aria-current="page" href="#">Reportes</a>
+            <header class="at_mainheader">
 
-                                            </li>
+                <div class="at_header">
 
-                                            <li class="nav-item">
+                    <div class="ml-auto at_headerright">
 
-                                                <a class="nav-link active" id="Opcion_Confi" aria-current="page" href="#">Configuración</a>
+                        <nav class="navbar bg-body-tertiary fixed-top">
 
-                                            </li>
+                            <div class="col-md-1">
 
-                                        </ul>
+                                <div class="container-fluid">
+
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+
+                                        <span class="navbar-toggler-icon"></span>
+
+                                    </button>
+
+                                
+
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+                                        <div class="offcanvas-header">
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SS-CON</h5>
+
+                                        </div>
+
+            
+
+                                        <div class="offcanvas-body">
+
+                                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                                                <li class="nav-item">
+
+                                                <a class="nav-link active" id="Opcion_Cata" aria-current="page" href="#">Catálogos</a>
+
+                                                </li>
+
+                                                <li class="nav-item">
+
+                                                    <a class="nav-link active" id="Opcion_Movi" aria-current="page" href="#">Movimientos</a>
+
+                                                </li>
+
+                                                <li class="nav-item">
+
+                                                    <a class="nav-link active" id="Opcion_Cierres" aria-current="page" href="#">Cierres</a>
+
+                                                </li>
+
+                                                <li class="nav-item">
+
+                                                    <a class="nav-link active" id="Opcion_Consu" aria-current="page" href="#">Consultas</a>
+
+                                                </li>
+
+                                                <li class="nav-item">
+
+                                                    <a class="nav-link active" id="Opcion_Bala" aria-current="page" href="#">Balances</a>
+
+                                                </li>
+
+                                                <li class="nav-item">
+
+                                                    <a class="nav-link active" id="Opcion_Repo" aria-current="page" href="#">Reportes</a>
+
+                                                </li>
+
+                                                <li class="nav-item">
+
+                                                    <a class="nav-link active" id="Opcion_Confi" aria-current="page" href="#">Configuración</a>
+
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
 
                                     </div>
 
@@ -140,1461 +142,1461 @@
 
                             </div>
 
-                        </div>
+        
 
-    
+                            <div class="col-md-3">
 
-                        <div class="col-md-3">
+                                <div class="logo">
 
-                            <div class="logo">
+                                    <img src="img/SSPyMes.png" alt="">
 
-                                <img src="img/SSPyMes.png" alt="">
+                                </div>
 
                             </div>
 
+        
+
+                            <div class="col-md-4"></div>
+
+        
+
+                            <div class="col-md-3">
+
+                                <ul class="at_ul_header">
+
+                                    <li class="action">
+
+                                        <div class="profile" onclick="menuToggle();">
+
+                                            <ul>
+
+                                                <li>
+
+                                                    <img src="img/icons8-user-90-yellow.png" alt="User">
+
+                                                    <p>User</p>
+
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+
+                                        <div id="menu_user">
+
+                                            <ul>
+
+                                                <p>User</p> 
+
+                                                <li><img src="img/icons8-messaging-90 (1).png" alt=""><a href="#">Mensajeria</a></li>
+
+                                                <li><img src="img/icons8-pencil-90.png" alt=""><a href="#">Editar Datos de Usuario</a></li>
+
+                                                <li><img src="img/icons8-shutdown-90.png" alt=""><a href="#">Cerrar Sesión</a></li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </nav>
+
+                </div>
+
+            </header>
+
+        </div>
+
+
+
+        <div class="nav_menu">
+
+            <div class="row">
+
+                <div class="col-md-2">
+
+                    <div id="id_empresa">
+
+                        <div id="logo_empresa">
+
+                            <img src="img/building.png" alt="">
+
                         </div>
 
-    
+                        <select class="form-select" aria-label="Default select example">
 
-                        <div class="col-md-4"></div>
+                            <option selected>Soluciones SS</option>
 
-    
+                            <option value="1">Empresa #1</option>
 
-                        <div class="col-md-3">
+                            <option value="2">Empresa #2</option>
 
-                            <ul class="at_ul_header">
+                            <option value="3">Empresa #</option>
 
-                                <li class="action">
-
-                                    <div class="profile" onclick="menuToggle();">
-
-                                        <ul>
-
-                                            <li>
-
-                                                <img src="img/icons8-user-90-yellow.png" alt="User">
-
-                                                <p>User</p>
-
-                                            </li>
-
-                                        </ul>
-
-                                    </div>
-
-                                    <div id="menu_user">
-
-                                        <ul>
-
-                                            <p>User</p> 
-
-                                            <li><img src="img/icons8-messaging-90 (1).png" alt=""><a href="#">Mensajeria</a></li>
-
-                                            <li><img src="img/icons8-pencil-90.png" alt=""><a href="#">Editar Datos de Usuario</a></li>
-
-                                            <li><img src="img/icons8-shutdown-90.png" alt=""><a href="#">Cerrar Sesión</a></li>
-
-                                        </ul>
-
-                                    </div>
-
-                                </li>
-
-                            </ul>
-
-                        </div>
-
-                    </nav>
-
-            </div>
-
-        </header>
-
-    </div>
-
-
-
-    <div class="nav_menu">
-
-        <div class="row">
-
-            <div class="col-md-2">
-
-                <div id="id_empresa">
-
-                    <div id="logo_empresa">
-
-                        <img src="img/building.png" alt="">
+                        </select>
 
                     </div>
 
-                    <select class="form-select" aria-label="Default select example">
+                </div>
 
-                        <option selected>Soluciones SS</option>
 
-                        <option value="1">Empresa #1</option>
 
-                        <option value="2">Empresa #2</option>
+                
 
-                        <option value="3">Empresa #</option>
+                <!--MENU CATALOGO -->
 
-                    </select>
+                <div class="col-md-10" id="menu_Cata">
+
+                    <nav id="menu_seccion">
+
+                        <ul class="nav justify-content-end">
+
+                            <li class="nav-item">
+
+                            <a class="nav-link active" id="op1_1" aria-current="page" href="#">Cuadro Cuentas</a>
+
+                            </li>
+
+                            <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Administración</a>
+
+                                <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item" id="op1_2" href="#">Ver el Standard</a></li>
+
+                                <li><hr class="dropdown-divider"></li>
+
+                                <li><a class="dropdown-item" id="op1_3" href="#">Cargar el Standard</a></li>
+
+                                <li><hr class="dropdown-divider"></li>
+
+                                <li><a class="dropdown-item" id="op1_4" href="#">Eliminar cuentas en bloque</a></li>
+
+                                <li><hr class="dropdown-divider"></li>
+
+                                <li><a class="dropdown-item" id="op1_5" href="#">Renumerar</a></li>
+
+                                <li><hr class="dropdown-divider"></li>
+
+                                <li><a class="dropdown-item" id="op1_6" href="#">Jalar-Pasar Excel</a></li>
+
+                                </ul>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op1_7" aria-current="page" href="#">Integradores</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op1_8" aria-current="page" href="#">Presupuesto</a>
+
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+
+
+                <!--MENU MOVIMIENTOS -->
+
+                <div class="col-md-10" id="menu_Movi">
+
+                    <nav id="menu_seccion">
+
+                        <ul class="nav justify-content-end">
+
+                            <li class="nav-item">
+
+                            <a class="nav-link active" id="op2_1" aria-current="page" href="#">Mantenimiento Asientos</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op2_2" aria-current="page" href="#">Asientos Fijos</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op2_3" aria-current="page" href="#">Control Integración</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op2_4" aria-current="page" href="#">Aplicación</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op2_5" aria-current="page" href="#">Reversión</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op2_6" aria-current="page" href="#">Control Presupuesto</a>
+
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+
+
+                <!--MENU CIERRES -->
+
+                <div class="col-md-10" id="menu_Cierre">
+
+                    <nav id="menu_seccion">
+
+                        <ul class="nav justify-content-end">
+
+                            <li class="nav-item">
+
+                            <a class="nav-link active" id="op3_1" aria-current="page" href="#">Pre Cierre</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op3_2" aria-current="page" href="#">Cierre Periodo</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op3_3" aria-current="page" href="#">Asiento Anual Cierre</a>
+
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+
+
+                <!--MENU BALANCES-->
+
+                <div class="col-md-10" id="menu_Balances">
+
+                    <nav id="menu_seccion">
+
+                        <ul class="nav justify-content-end">
+
+                            <li class="nav-item">
+
+                            <a class="nav-link active" id="op4_1" aria-current="page" href="#">Balance Comprobación</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op4_2" aria-current="page" href="#">Estado Resultados</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op4_3" aria-current="page" href="#">Estado Situación</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op4_4" aria-current="page" href="#">Libro Diario</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op4_5" aria-current="page" href="#">Generador Anexos</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op4_6" aria-current="page" href="#">Libros Digitales</a>
+
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+
+
+                <!--MENU CONSULTAS -->
+
+                <div class="col-md-10" id="menu_Consultas">
+
+                    <nav id="menu_seccion">
+
+                        <ul class="nav justify-content-end">
+
+                            <li class="nav-item">
+
+                            <a class="nav-link active" id="op5_1" aria-current="page" href="#">Consulta Cuenta</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op5_2" aria-current="page" href="#">Consulta Movimientos</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active"  id="op5_3" aria-current="page" href="#">Trazabilidad</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op5_4" aria-current="page" href="#">Consulta Presupuesto</a>
+
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+
+
+                <!--MENU REPORTES -->
+
+                <div class="col-md-10" id="menu_Reportes">
+
+                    <nav id="menu_seccion">
+
+                        <ul class="nav justify-content-end">
+
+                            <li class="nav-item">
+
+                            <a class="nav-link active" id="op6_1" aria-current="page" href="#">Rep. Cuadro Cuentas</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op6_2" aria-current="page" href="#">Rep. Asientos</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op6_3" aria-current="page" href="#">Rep. Transacciones</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op6_4" aria-current="page" href="#">Rep. Integradores</a>
+
+                            </li>
+
+
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op6_5" aria-current="page" href="#">Rep. Cierres</a>
+
+                            </li>
+
+
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op6_6" aria-current="page" href="#">Comparativos</a>
+
+                            </li>
+
+
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op6_7" aria-current="page" href="#">Presupuesto</a>
+
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+
+
+                <!--MENU CONFIGURACION -->
+
+                <div class="col-md-10" id="menu_Confi">
+
+                    <nav id="menu_seccion">
+
+                        <ul class="nav justify-content-end">
+
+                            <li class="nav-item">
+
+                            <a class="nav-link active" id="op7_1" aria-current="page" href="#">Config. General</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op7_2" aria-current="page" href="#">Centro de Costo</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op7_3" aria-current="page" href="#">Grupos Contables</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op7_4" aria-current="page" href="#">Componentes Presupuesto</a>
+
+                            </li>
+
+
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" id="op7_5" aria-current="page" href="#">Tabla Traducción</a>
+
+                            </li>
+
+                        </ul>
+
+                    </nav>
 
                 </div>
 
             </div>
 
+        </div>
 
+
+
+        <div class="row">
+
+            <div id="espacio_trabajo">
+
+                <div id="tabContents">
+
+                    <div class="contents show" id="content_1">
+
+                        <!--TITULOS DE TABULACION-->
+
+                        <ul>
+
+                            <li id="t_tab0"><a href="#tab0">
+
+                                <p class="Titulo">
+
+                                    Inicio
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <!--TABS CATALOGO-->
+
+                            <li id="t_tab1_1"><a href="#tab1_1">
+
+                                <p class="Titulo">
+
+                                    Cuadro de cuentas <button class="b_c" id="c1_1">X</button>
+
+                                </p>
+
+                            </a></li>
+
+                            <li id="t_tab1_2"><a href="#tab1_2">
+
+                                <p class="Titulo">
+
+                                    Ver el Standart <button class="b_c" id="c1_2">X</button>
+
+                                </p>
+
+                            </a></li>
+
+                            <li id="t_tab1_3"><a href="#tab1_3">
+
+                                <p class="Titulo">
+
+                                    Cargar el Standard <button class="b_c" id="c1_3">X</button>
+
+                                </p>
+
+                            </a></li>
+
+                            <li id="t_tab1_4"><a href="#tab1_4">
+
+                                <p class="Titulo">
+
+                                    Eliminar Cuentas en bloque <button class="b_c" id="c1_4">X</button>
+
+                                </p>
+
+                            </a></li>
+
+                            <li id="t_tab1_5"><a href="#tab1_5">
+
+                                <p class="Titulo">
+
+                                    Renumerar <button class="b_c" id="c1_5">X</button>
+
+                                </p>
+
+                            </a></li>
+
+                            <li id="t_tab1_6"><a href="#tab1_6">
+
+                                <p class="Titulo">
+
+                                    Jalar-Pasar Excel <button class="b_c" id="c1_6">X</button>
+
+                                </p>
+
+                            </a></li>
+
+                            <li id="t_tab1_7"><a href="#tab1_7">
+
+                                <p class="Titulo">
+
+                                    Integradores <button class="b_c" id="c1_7">X</button>
+
+                                </p>
+
+                            </a></li>
+
+                            <li id="t_tab1_8"><a href="#tab1_8">
+
+                                <p class="Titulo">
+
+                                    Presupuesto <button class="b_c" id="c1_8">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <!--TABS MOVIMIENTOS-->
+
+                            <li id="t_tab2_1"><a href="#tab2_1">
+
+                                <p class="Titulo">
+
+                                    Mantenimiento de Asientos <button class="b_c" id="c2_1">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab2_2"><a href="#tab2_2">
+
+                                <p class="Titulo">
+
+                                    Asientos Fijos <button class="b_c" id="c2_2">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab2_3"><a href="#tab2_3">
+
+                                <p class="Titulo">
+
+                                    Control de Integración <button class="b_c" id="c2_3">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab2_4"><a href="#tab2_4">
+
+                                <p class="Titulo">
+
+                                    Aplicación <button class="b_c" id="c2_4">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab2_5"><a href="#tab2_5">
+
+                                <p class="Titulo">
+
+                                    Reversión <button class="b_c" id="c2_5">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab2_6"><a href="#tab2_6">
+
+                                <p class="Titulo">
+
+                                    Control del Presupuesto <button class="b_c" id="c2_6">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <!--TABS CIERES-->
+
+                            <li id="t_tab3_1"><a href="#tab3_1">
+
+                                <p class="Titulo">
+
+                                    Pre Cierre <button class="b_c" id="c3_1">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab3_2"><a href="#tab3_2">
+
+                                <p class="Titulo">
+
+                                    Cierre de Periodo <button class="b_c" id="c3_2">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab3_3"><a href="#tab3_3">
+
+                                <p class="Titulo">
+
+                                    Asiento Anual de Cierre <button class="b_c" id="c3_3">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <!--TABS BALANCES-->
+
+                            <li id="t_tab4_1"><a href="#tab4_1">
+
+                                <p class="Titulo">
+
+                                    Balance de Comprobación <button class="b_c" id="c4_1">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab4_2"><a href="#tab4_2">
+
+                                <p class="Titulo">
+
+                                    Estado de Resultados <button class="b_c" id="c4_2">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab4_3"><a href="#tab4_3">
+
+                                <p class="Titulo">
+
+                                    Estado de Situación <button class="b_c" id="c4_3">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab4_4"><a href="#tab4_4">
+
+                                <p class="Titulo">
+
+                                    Libro del Diario <button class="b_c" id="c4_4">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab4_5"><a href="#tab4_5">
+
+                                <p class="Titulo">
+
+                                    Generador de Anexos <button class="b_c" id="c4_5">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab4_6"><a href="#tab4_6">
+
+                                <p class="Titulo">
+
+                                    Generador de Anexos <button class="b_c" id="c4_6">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <!--TABS CONSULTAS-->
+
+                            <li id="t_tab5_1"><a href="#tab5_1">
+
+                                <p class="Titulo">
+
+                                    Consulta de Cuenta <button class="b_c" id="c5_1">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab5_2"><a href="#tab5_2">
+
+                                <p class="Titulo">
+
+                                    Consulta de Movimientos <button class="b_c" id="c5_2">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab5_3"><a href="#tab5_3">
+
+                                <p class="Titulo">
+
+                                    Trazabilidad <button class="b_c" id="c5_3">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab5_4"><a href="#tab5_4">
+
+                                <p class="Titulo">
+
+                                    Consulta del Presupuesto <button class="b_c" id="c5_4">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <!--TABS REPORTES-->
+
+                            <li id="t_tab6_1"><a href="#tab6_1">
+
+                                <p class="Titulo">
+
+                                    Reporte de Cuadro de Cuentas <button class="b_c" id="c6_1">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab6_2"><a href="#tab6_2">
+
+                                <p class="Titulo">
+
+                                    Reporte de Asientos <button class="b_c" id="c6_2">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab6_3"><a href="#tab6_3">
+
+                                <p class="Titulo">
+
+                                    Reporte de Transacciones <button class="b_c" id="c6_3">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab6_4"><a href="#tab6_4">
+
+                                <p class="Titulo">
+
+                                    Reporte de Integradores <button class="b_c" id="c6_4">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab6_5"><a href="#tab6_5">
+
+                                <p class="Titulo">
+
+                                    Reporte de Cierres <button class="b_c" id="c6_5">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab6_6"><a href="#tab6_6">
+
+                                <p class="Titulo">
+
+                                    Comparativos <button class="b_c" id="c6_6">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab6_7"><a href="#tab6_7">
+
+                                <p class="Titulo">
+
+                                    Presupuesto <button class="b_c" id="c6_7">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <!--TABS CONFIGURACION-->
+
+                            <li id="t_tab7_1"><a href="#tab7_1">
+
+                                <p class="Titulo">
+
+                                    Configuración General <button class="b_c" id="c7_1">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab7_2"><a href="#tab7_2">
+
+                                <p class="Titulo">
+
+                                    Centros de Costo <button class="b_c" id="c7_2">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab7_3"><a href="#tab7_3">
+
+                                <p class="Titulo">
+
+                                    Grupos Contables <button class="b_c" id="c7_3">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab7_4"><a href="#tab7_4">
+
+                                <p class="Titulo">
+
+                                    Componentes del Presupuesto <button class="b_c" id="c7_4">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <li id="t_tab7_5"><a href="#tab7_5">
+
+                                <p class="Titulo">
+
+                                    Tabla de Traducción <button class="b_c" id="c7_5">X</button>
+
+                                </p>
+
+                            </a></li>
+
+
+
+                            <!--TABS REPORTES-->
+
+                        </ul>
+
+        
+
+                        <!--TAB 0-->
 
             
 
-            <!--MENU CATALOGO -->
+                        <div class="c_tab" id="tab0">
 
-            <div class="col-md-10" id="menu_Cata">
+                            ¡Bienvenido! <br>
 
-                <nav id="menu_seccion">
+                            Presiona una de las categorias para empezar a trabajar en ellas.
 
-                    <ul class="nav justify-content-end">
+                        </div>
 
-                        <li class="nav-item">
-
-                          <a class="nav-link active" id="op1_1" aria-current="page" href="#">Cuadro Cuentas</a>
-
-                        </li>
-
-                        <li class="nav-item dropdown">
-
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Administración</a>
-
-                            <ul class="dropdown-menu">
-
-                              <li><a class="dropdown-item" id="op1_2" href="#">Ver el Standard</a></li>
-
-                              <li><hr class="dropdown-divider"></li>
-
-                              <li><a class="dropdown-item" id="op1_3" href="#">Cargar el Standard</a></li>
-
-                              <li><hr class="dropdown-divider"></li>
-
-                              <li><a class="dropdown-item" id="op1_4" href="#">Eliminar cuentas en bloque</a></li>
-
-                              <li><hr class="dropdown-divider"></li>
-
-                              <li><a class="dropdown-item" id="op1_5" href="#">Renumerar</a></li>
-
-                              <li><hr class="dropdown-divider"></li>
-
-                              <li><a class="dropdown-item" id="op1_6" href="#">Jalar-Pasar Excel</a></li>
-
-                            </ul>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op1_7" aria-current="page" href="#">Integradores</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op1_8" aria-current="page" href="#">Presupuesto</a>
-
-                        </li>
-
-                    </ul>
-
-                </nav>
-
-            </div>
-
-
-
-            <!--MENU MOVIMIENTOS -->
-
-            <div class="col-md-10" id="menu_Movi">
-
-                <nav id="menu_seccion">
-
-                    <ul class="nav justify-content-end">
-
-                        <li class="nav-item">
-
-                          <a class="nav-link active" id="op2_1" aria-current="page" href="#">Mantenimiento Asientos</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op2_2" aria-current="page" href="#">Asientos Fijos</a>
-
-                          </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op2_3" aria-current="page" href="#">Control Integración</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op2_4" aria-current="page" href="#">Aplicación</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op2_5" aria-current="page" href="#">Reversión</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op2_6" aria-current="page" href="#">Control Presupuesto</a>
-
-                        </li>
-
-                    </ul>
-
-                </nav>
-
-            </div>
-
-
-
-            <!--MENU CIERRES -->
-
-            <div class="col-md-10" id="menu_Cierre">
-
-                <nav id="menu_seccion">
-
-                    <ul class="nav justify-content-end">
-
-                        <li class="nav-item">
-
-                          <a class="nav-link active" id="op3_1" aria-current="page" href="#">Pre Cierre</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op3_2" aria-current="page" href="#">Cierre Periodo</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op3_3" aria-current="page" href="#">Asiento Anual Cierre</a>
-
-                        </li>
-
-                    </ul>
-
-                </nav>
-
-            </div>
-
-
-
-            <!--MENU BALANCES-->
-
-            <div class="col-md-10" id="menu_Balances">
-
-                <nav id="menu_seccion">
-
-                    <ul class="nav justify-content-end">
-
-                        <li class="nav-item">
-
-                          <a class="nav-link active" id="op4_1" aria-current="page" href="#">Balance Comprobación</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op4_2" aria-current="page" href="#">Estado Resultados</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op4_3" aria-current="page" href="#">Estado Situación</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op4_4" aria-current="page" href="#">Libro Diario</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op4_5" aria-current="page" href="#">Generador Anexos</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op4_6" aria-current="page" href="#">Libros Digitales</a>
-
-                        </li>
-
-                    </ul>
-
-                </nav>
-
-            </div>
-
-
-
-            <!--MENU CONSULTAS -->
-
-            <div class="col-md-10" id="menu_Consultas">
-
-                <nav id="menu_seccion">
-
-                    <ul class="nav justify-content-end">
-
-                        <li class="nav-item">
-
-                          <a class="nav-link active" id="op5_1" aria-current="page" href="#">Consulta Cuenta</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op5_2" aria-current="page" href="#">Consulta Movimientos</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active"  id="op5_3" aria-current="page" href="#">Trazabilidad</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op5_4" aria-current="page" href="#">Consulta Presupuesto</a>
-
-                        </li>
-
-                    </ul>
-
-                </nav>
-
-            </div>
-
-
-
-            <!--MENU REPORTES -->
-
-            <div class="col-md-10" id="menu_Reportes">
-
-                <nav id="menu_seccion">
-
-                    <ul class="nav justify-content-end">
-
-                        <li class="nav-item">
-
-                          <a class="nav-link active" id="op6_1" aria-current="page" href="#">Rep. Cuadro Cuentas</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op6_2" aria-current="page" href="#">Rep. Asientos</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op6_3" aria-current="page" href="#">Rep. Transacciones</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op6_4" aria-current="page" href="#">Rep. Integradores</a>
-
-                        </li>
-
-
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op6_5" aria-current="page" href="#">Rep. Cierres</a>
-
-                        </li>
-
-
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op6_6" aria-current="page" href="#">Comparativos</a>
-
-                        </li>
-
-
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op6_7" aria-current="page" href="#">Presupuesto</a>
-
-                        </li>
-
-                    </ul>
-
-                </nav>
-
-            </div>
-
-
-
-            <!--MENU CONFIGURACION -->
-
-            <div class="col-md-10" id="menu_Confi">
-
-                <nav id="menu_seccion">
-
-                    <ul class="nav justify-content-end">
-
-                        <li class="nav-item">
-
-                          <a class="nav-link active" id="op7_1" aria-current="page" href="#">Config. General</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op7_2" aria-current="page" href="#">Centro de Costo</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op7_3" aria-current="page" href="#">Grupos Contables</a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op7_4" aria-current="page" href="#">Componentes Presupuesto</a>
-
-                        </li>
-
-
-
-                        <li class="nav-item">
-
-                            <a class="nav-link active" id="op7_5" aria-current="page" href="#">Tabla Traducción</a>
-
-                        </li>
-
-                    </ul>
-
-                </nav>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <div class="row">
-
-        <div id="espacio_trabajo">
-
-            <div id="tabContents">
-
-                <div class="contents show" id="content_1">
-
-                    <!--TITULOS DE TABULACION-->
-
-                    <ul>
-
-                        <li id="t_tab0"><a href="#tab0">
-
-                            <p class="Titulo">
-
-                                Inicio
-
-                            </p>
-
-                        </a></li>
-
-
+            
 
                         <!--TABS CATALOGO-->
 
-                        <li id="t_tab1_1"><a href="#tab1_1">
+                        <!--TAB1_1-->
 
-                            <p class="Titulo">
+            
 
-                                Cuadro de cuentas <button class="b_c" id="c1_1">X</button>
+                        <div class="c_tab" id="tab1_1">
 
-                            </p>
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                        </a></li>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                        <li id="t_tab1_2"><a href="#tab1_2">
+                        </div>
 
-                            <p class="Titulo">
+            
 
-                                Ver el Standart <button class="b_c" id="c1_2">X</button>
+                        <!--TAB1_2-->
 
-                            </p>
+                        <div class="c_tab" id="tab1_2">
 
-                        </a></li>
+                            Segundo Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                        <li id="t_tab1_3"><a href="#tab1_3">
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                            <p class="Titulo">
+                        </div>
 
-                                Cargar el Standard <button class="b_c" id="c1_3">X</button>
+            
 
-                            </p>
+                        <!--TAB1_3-->
 
-                        </a></li>
+                        <div class="c_tab" id="tab1_3">
 
-                        <li id="t_tab1_4"><a href="#tab1_4">
+                            Tercero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                            <p class="Titulo">
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                                Eliminar Cuentas en bloque <button class="b_c" id="c1_4">X</button>
+                        </div>
 
-                            </p>
+            
 
-                        </a></li>
+                        <!--TAB1_4-->
 
-                        <li id="t_tab1_5"><a href="#tab1_5">
+                        <div class="c_tab" id="tab1_4">
 
-                            <p class="Titulo">
+                        Cuarto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                                Renumerar <button class="b_c" id="c1_5">X</button>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                            </p>
+                        </div>
 
-                        </a></li>
+            
 
-                        <li id="t_tab1_6"><a href="#tab1_6">
+                        <!--TAB1_5-->
 
-                            <p class="Titulo">
+                        <div class="c_tab" id="tab1_5">
 
-                                Jalar-Pasar Excel <button class="b_c" id="c1_6">X</button>
+                            Quinto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                            </p>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                        </a></li>
+                        </div>
 
-                        <li id="t_tab1_7"><a href="#tab1_7">
+            
 
-                            <p class="Titulo">
+                        <!--TAB1_6-->
 
-                                Integradores <button class="b_c" id="c1_7">X</button>
+                        <div class="c_tab" id="tab1_6">
 
-                            </p>
+                            Sexto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                        </a></li>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                        <li id="t_tab1_8"><a href="#tab1_8">
+                        </div>
 
-                            <p class="Titulo">
 
-                                Presupuesto <button class="b_c" id="c1_8">X</button>
 
-                            </p>
+                        <!--TAB1_7-->
 
-                        </a></li>
+                        <div class="c_tab" id="tab1_7">
+
+                            Sexto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
+
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
+
+                        </div>
+
+
+
+                        <!--TAB1_8-->
+
+                        <div class="c_tab" id="tab1_8">
+
+                            Sexto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
+
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
+
+                        </div>
 
 
 
                         <!--TABS MOVIMIENTOS-->
 
-                        <li id="t_tab2_1"><a href="#tab2_1">
+                        <!--TAB2_1-->
 
-                            <p class="Titulo">
+                        <div class="c_tab" id="tab2_1">
 
-                                Mantenimiento de Asientos <button class="b_c" id="c2_1">X</button>
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                            </p>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                        </a></li>
+                        </div>
 
+                        
 
+                        <!--TAB2_2-->
 
-                        <li id="t_tab2_2"><a href="#tab2_2">
+                        <div class="c_tab" id="tab2_2">
 
-                            <p class="Titulo">
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                                Asientos Fijos <button class="b_c" id="c2_2">X</button>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                            </p>
-
-                        </a></li>
-
-
-
-                        <li id="t_tab2_3"><a href="#tab2_3">
-
-                            <p class="Titulo">
-
-                                Control de Integración <button class="b_c" id="c2_3">X</button>
-
-                            </p>
-
-                        </a></li>
+                        </div>
 
 
 
-                        <li id="t_tab2_4"><a href="#tab2_4">
+                        <!--TAB2_3-->
 
-                            <p class="Titulo">
+                        <div class="c_tab" id="tab2_3">
 
-                                Aplicación <button class="b_c" id="c2_4">X</button>
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                            </p>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                        </a></li>
-
-
-
-                        <li id="t_tab2_5"><a href="#tab2_5">
-
-                            <p class="Titulo">
-
-                                Reversión <button class="b_c" id="c2_5">X</button>
-
-                            </p>
-
-                        </a></li>
+                        </div>
 
 
 
-                        <li id="t_tab2_6"><a href="#tab2_6">
+                        <!--TAB2_4-->
 
-                            <p class="Titulo">
+                        <div class="c_tab" id="tab2_4">
 
-                                Control del Presupuesto <button class="b_c" id="c2_6">X</button>
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                            </p>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                        </a></li>
-
-
-
-                        <!--TABS CIERES-->
-
-                        <li id="t_tab3_1"><a href="#tab3_1">
-
-                            <p class="Titulo">
-
-                                Pre Cierre <button class="b_c" id="c3_1">X</button>
-
-                            </p>
-
-                        </a></li>
+                        </div>
 
 
 
-                        <li id="t_tab3_2"><a href="#tab3_2">
+                        <!--TAB2_5-->
 
-                            <p class="Titulo">
+                        <div class="c_tab" id="tab2_5">
 
-                                Cierre de Periodo <button class="b_c" id="c3_2">X</button>
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                            </p>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                        </a></li>
+                        </div>
 
 
 
-                        <li id="t_tab3_3"><a href="#tab3_3">
+                        <!--TAB2_6-->
 
-                            <p class="Titulo">
+                        <div class="c_tab" id="tab2_6">
 
-                                Asiento Anual de Cierre <button class="b_c" id="c3_3">X</button>
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                            </p>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                        </a></li>
+                        </div>
+
+
+
+                        <!--TABS CIERRES-->
+
+                        <!--TAB3_1-->
+
+                        <div class="c_tab" id="tab3_1">
+
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
+
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
+
+                        </div>
+
+                        
+
+                        <!--TAB3_2-->
+
+                        <div class="c_tab" id="tab3_2">
+
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
+
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
+
+                        </div>
+
+
+
+                        <!--TAB3_3-->
+
+                        <div class="c_tab" id="tab3_3">
+
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
+
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
+
+                        </div>
 
 
 
                         <!--TABS BALANCES-->
 
-                        <li id="t_tab4_1"><a href="#tab4_1">
+                        <!--TAB4_1-->
 
-                            <p class="Titulo">
+                        <div class="c_tab" id="tab4_1">
 
-                                Balance de Comprobación <button class="b_c" id="c4_1">X</button>
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                            </p>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                        </a></li>
+                        </div>
 
+                        
 
+                        <!--TAB4_2-->
 
-                        <li id="t_tab4_2"><a href="#tab4_2">
+                        <div class="c_tab" id="tab4_2">
 
-                            <p class="Titulo">
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                                Estado de Resultados <button class="b_c" id="c4_2">X</button>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                            </p>
-
-                        </a></li>
-
-
-
-                        <li id="t_tab4_3"><a href="#tab4_3">
-
-                            <p class="Titulo">
-
-                                Estado de Situación <button class="b_c" id="c4_3">X</button>
-
-                            </p>
-
-                        </a></li>
+                        </div>
 
 
 
-                        <li id="t_tab4_4"><a href="#tab4_4">
+                        <!--TAB4_3-->
 
-                            <p class="Titulo">
+                        <div class="c_tab" id="tab4_3">
 
-                                Libro del Diario <button class="b_c" id="c4_4">X</button>
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                            </p>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                        </a></li>
-
-
-
-                        <li id="t_tab4_5"><a href="#tab4_5">
-
-                            <p class="Titulo">
-
-                                Generador de Anexos <button class="b_c" id="c4_5">X</button>
-
-                            </p>
-
-                        </a></li>
+                        </div>
 
 
 
-                        <li id="t_tab4_6"><a href="#tab4_6">
+                        <!--TAB4_4-->
 
-                            <p class="Titulo">
+                        <div class="c_tab" id="tab4_4">
 
-                                Generador de Anexos <button class="b_c" id="c4_6">X</button>
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                            </p>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                        </a></li>
+                        </div>
+
+                        
+
+                        <!--TAB4_5-->
+
+                        <div class="c_tab" id="tab4_5">
+
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
+
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
+
+                        </div>
+
+
+
+                        <!--TAB4_6-->
+
+                        <div class="c_tab" id="tab4_6">
+
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
+
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
+
+                        </div>
 
 
 
                         <!--TABS CONSULTAS-->
 
-                        <li id="t_tab5_1"><a href="#tab5_1">
+                        <!--TAB5_1-->
 
-                            <p class="Titulo">
+                        <div class="c_tab" id="tab5_1">
 
-                                Consulta de Cuenta <button class="b_c" id="c5_1">X</button>
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                            </p>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                        </a></li>
+                        </div>
 
+                        
 
+                        <!--TAB5_2-->
 
-                        <li id="t_tab5_2"><a href="#tab5_2">
+                        <div class="c_tab" id="tab5_2">
 
-                            <p class="Titulo">
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                                Consulta de Movimientos <button class="b_c" id="c5_2">X</button>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                            </p>
-
-                        </a></li>
-
-
-
-                        <li id="t_tab5_3"><a href="#tab5_3">
-
-                            <p class="Titulo">
-
-                                Trazabilidad <button class="b_c" id="c5_3">X</button>
-
-                            </p>
-
-                        </a></li>
+                        </div>
 
 
 
-                        <li id="t_tab5_4"><a href="#tab5_4">
+                        <!--TAB5_3-->
 
-                            <p class="Titulo">
+                        <div class="c_tab" id="tab5_3">
 
-                                Consulta del Presupuesto <button class="b_c" id="c5_4">X</button>
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                            </p>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                        </a></li>
+                        </div>
+
+
+
+                        <!--TAB5_4-->
+
+                        <div class="c_tab" id="tab5_4">
+
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
+
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
+
+                        </div>
 
 
 
                         <!--TABS REPORTES-->
 
-                        <li id="t_tab6_1"><a href="#tab6_1">
+                        <!--TAB6_1-->
 
-                            <p class="Titulo">
+                        <div class="c_tab" id="tab6_1">
 
-                                Reporte de Cuadro de Cuentas <button class="b_c" id="c6_1">X</button>
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                            </p>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                        </a></li>
+                        </div>
 
+                        
 
+                        <!--TAB6_2-->
 
-                        <li id="t_tab6_2"><a href="#tab6_2">
+                        <div class="c_tab" id="tab6_2">
 
-                            <p class="Titulo">
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                                Reporte de Asientos <button class="b_c" id="c6_2">X</button>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                            </p>
+                        </div>
 
-                        </a></li>
 
 
+                        <!--TAB6_3-->
 
-                        <li id="t_tab6_3"><a href="#tab6_3">
+                        <div class="c_tab" id="tab6_3">
 
-                            <p class="Titulo">
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                                Reporte de Transacciones <button class="b_c" id="c6_3">X</button>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                            </p>
+                        </div>
 
-                        </a></li>
 
 
+                        <!--TAB6_4-->
 
-                        <li id="t_tab6_4"><a href="#tab6_4">
+                        <div class="c_tab" id="tab6_4">
 
-                            <p class="Titulo">
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                                Reporte de Integradores <button class="b_c" id="c6_4">X</button>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                            </p>
+                        </div>
 
-                        </a></li>
 
 
+                        <!--TAB6_5-->
 
-                        <li id="t_tab6_5"><a href="#tab6_5">
+                        <div class="c_tab" id="tab6_5">
 
-                            <p class="Titulo">
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                                Reporte de Cierres <button class="b_c" id="c6_5">X</button>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                            </p>
+                        </div>
 
-                        </a></li>
 
 
+                        <!--TAB6_6-->
 
-                        <li id="t_tab6_6"><a href="#tab6_6">
+                        <div class="c_tab" id="tab6_6">
 
-                            <p class="Titulo">
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                                Comparativos <button class="b_c" id="c6_6">X</button>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                            </p>
+                        </div>
 
-                        </a></li>
 
 
+                        <!--TAB6_7-->
 
-                        <li id="t_tab6_7"><a href="#tab6_7">
+                        <div class="c_tab" id="tab6_7">
 
-                            <p class="Titulo">
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                                Presupuesto <button class="b_c" id="c6_7">X</button>
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                            </p>
-
-                        </a></li>
-
-
-
-                        <!--TABS CONFIGURACION-->
-
-                        <li id="t_tab7_1"><a href="#tab7_1">
-
-                            <p class="Titulo">
-
-                                Configuración General <button class="b_c" id="c7_1">X</button>
-
-                            </p>
-
-                        </a></li>
-
-
-
-                        <li id="t_tab7_2"><a href="#tab7_2">
-
-                            <p class="Titulo">
-
-                                Centros de Costo <button class="b_c" id="c7_2">X</button>
-
-                            </p>
-
-                        </a></li>
-
-
-
-                        <li id="t_tab7_3"><a href="#tab7_3">
-
-                            <p class="Titulo">
-
-                                Grupos Contables <button class="b_c" id="c7_3">X</button>
-
-                            </p>
-
-                        </a></li>
-
-
-
-                        <li id="t_tab7_4"><a href="#tab7_4">
-
-                            <p class="Titulo">
-
-                                Componentes del Presupuesto <button class="b_c" id="c7_4">X</button>
-
-                            </p>
-
-                        </a></li>
-
-
-
-                        <li id="t_tab7_5"><a href="#tab7_5">
-
-                            <p class="Titulo">
-
-                                Tabla de Traducción <button class="b_c" id="c7_5">X</button>
-
-                            </p>
-
-                        </a></li>
+                        </div>
 
 
 
                         <!--TABS REPORTES-->
 
-                    </ul>
+                        <!--TAB7_1-->
 
-    
+                        <div class="c_tab" id="tab7_1">
 
-                    <!--TAB 0-->
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-        
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                    <div class="c_tab" id="tab0">
+                        </div>
 
-                        ¡Bienvenido! <br>
+                        
 
-                        Presiona una de las categorias para empezar a trabajar en ellas.
+                        <!--TAB7_2-->
 
-                    </div>
+                        <div class="c_tab" id="tab7_2">
 
-        
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                    <!--TABS CATALOGO-->
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                    <!--TAB1_1-->
+                        </div>
 
-        
 
-                    <div class="c_tab" id="tab1_1">
 
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
+                        <!--TAB7_3-->
 
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
+                        <div class="c_tab" id="tab7_3">
 
-                    </div>
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-        
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                    <!--TAB1_2-->
+                        </div>
 
-                    <div class="c_tab" id="tab1_2">
 
-                        Segundo Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
+                        <!--TAB7_4-->
 
-                    </div>
+                        <div class="c_tab" id="tab7_4">
 
-        
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                    <!--TAB1_3-->
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                    <div class="c_tab" id="tab1_3">
+                        </div>
 
-                        Tercero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                    </div>
+                        <!--TAB7_5-->
 
-        
+                        <div class="c_tab" id="tab7_5">
 
-                    <!--TAB1_4-->
+                            Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
 
-                    <div class="c_tab" id="tab1_4">
+                            veniam laudantium eum consectetur inventore optio fuga quo sunt!
 
-                       Cuarto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-        
-
-                    <!--TAB1_5-->
-
-                    <div class="c_tab" id="tab1_5">
-
-                        Quinto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-        
-
-                    <!--TAB1_6-->
-
-                    <div class="c_tab" id="tab1_6">
-
-                        Sexto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB1_7-->
-
-                    <div class="c_tab" id="tab1_7">
-
-                        Sexto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB1_8-->
-
-                    <div class="c_tab" id="tab1_8">
-
-                        Sexto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TABS MOVIMIENTOS-->
-
-                    <!--TAB2_1-->
-
-                    <div class="c_tab" id="tab2_1">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-                    
-
-                    <!--TAB2_2-->
-
-                    <div class="c_tab" id="tab2_2">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB2_3-->
-
-                    <div class="c_tab" id="tab2_3">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB2_4-->
-
-                    <div class="c_tab" id="tab2_4">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB2_5-->
-
-                    <div class="c_tab" id="tab2_5">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB2_6-->
-
-                    <div class="c_tab" id="tab2_6">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TABS CIERRES-->
-
-                    <!--TAB3_1-->
-
-                    <div class="c_tab" id="tab3_1">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-                    
-
-                    <!--TAB3_2-->
-
-                    <div class="c_tab" id="tab3_2">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB3_3-->
-
-                    <div class="c_tab" id="tab3_3">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TABS BALANCES-->
-
-                    <!--TAB4_1-->
-
-                    <div class="c_tab" id="tab4_1">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-                    
-
-                    <!--TAB4_2-->
-
-                    <div class="c_tab" id="tab4_2">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB4_3-->
-
-                    <div class="c_tab" id="tab4_3">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB4_4-->
-
-                    <div class="c_tab" id="tab4_4">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-                    
-
-                    <!--TAB4_5-->
-
-                    <div class="c_tab" id="tab4_5">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB4_6-->
-
-                    <div class="c_tab" id="tab4_6">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TABS CONSULTAS-->
-
-                    <!--TAB5_1-->
-
-                    <div class="c_tab" id="tab5_1">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-                    
-
-                    <!--TAB5_2-->
-
-                    <div class="c_tab" id="tab5_2">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB5_3-->
-
-                    <div class="c_tab" id="tab5_3">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB5_4-->
-
-                    <div class="c_tab" id="tab5_4">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TABS REPORTES-->
-
-                    <!--TAB6_1-->
-
-                    <div class="c_tab" id="tab6_1">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-                    
-
-                    <!--TAB6_2-->
-
-                    <div class="c_tab" id="tab6_2">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB6_3-->
-
-                    <div class="c_tab" id="tab6_3">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB6_4-->
-
-                    <div class="c_tab" id="tab6_4">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB6_5-->
-
-                    <div class="c_tab" id="tab6_5">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB6_6-->
-
-                    <div class="c_tab" id="tab6_6">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB6_7-->
-
-                    <div class="c_tab" id="tab6_7">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TABS REPORTES-->
-
-                    <!--TAB7_1-->
-
-                    <div class="c_tab" id="tab7_1">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-                    
-
-                    <!--TAB7_2-->
-
-                    <div class="c_tab" id="tab7_2">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB7_3-->
-
-                    <div class="c_tab" id="tab7_3">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB7_4-->
-
-                    <div class="c_tab" id="tab7_4">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-
-                    </div>
-
-
-
-                    <!--TAB7_5-->
-
-                    <div class="c_tab" id="tab7_5">
-
-                        Primero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
+                        </div>
 
                     </div>
 
@@ -1603,8 +1605,6 @@
             </div>
 
         </div>
-
-    </div>
 
     <script src="js/SS-CON.js"></script>
 </body>
