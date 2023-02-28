@@ -123,7 +123,7 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 
 .menu{
     background: rgb(0, 126, 176);
-    width: 20%;
+    width: 17%;
     height: 100vh;
 
 /* APPLYING TRANSITION TO THE MENU :  */
@@ -244,14 +244,14 @@ a {
 
 main {
     position: fixed;
-    top: 23%;
-    left: 33%;
+    top: 42%;
+    left: 36%;
 }
 
 main > ul {
     display: flex;
     flex-direction: column;
-    height: 35vh;
+    height: 55vh;
     justify-content: space-around;
     align-items: center;
 }
@@ -263,7 +263,7 @@ main > ul > li {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 60vw;
+    width: 55vw;
     -webkit-transition: background-color 1s ease-out;
     -moz-transition: background-color 1s ease-out;
     -o-transition: background-color 1s ease-out;
@@ -292,6 +292,7 @@ main > ul > li > a > img {
     position: fixed;
     top: 20px;
     right: 20px;
+    user-select: none;
 }
 
 .action .profile {
@@ -304,6 +305,7 @@ main > ul > li > a > img {
 
 .action .profile ul li img {
     width: 30px;
+    pointer-events: none;
 }
 
 .action .profile ul li p {
@@ -393,6 +395,8 @@ main > ul > li > a > img {
     position: fixed;
     top: 25px;
     left: 20%;
+    pointer-events: none;
+    user-select: none;
 }
 
 #cuerpo{
@@ -403,9 +407,9 @@ main > ul > li > a > img {
     display: flex;
     position: fixed;
     z-index: 1;
-    top: 7%;
+    top: 12%;
     left: 100px;
-    height: 3vh;
+    height: 6vh;
 }
 
 #logo_empresa img{
@@ -462,9 +466,25 @@ main > ul > li > a > img {
     margin-left: 8px;
 }*/
 
+@media screen and (max-width: 280px) {
+    .menu {
+        width: 23vw;
+    }
+
+    .toggler:checked ~ .menu {
+        width: 31%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .menu > div > ul {
+        top: 175px;
+    }
+}
+
 @media screen and (min-width: 375px) {
     .menu > div > ul {
-        top: 100px;
+        top: 200px;
     }
 
     .menu > div > ul > li > a{
@@ -475,9 +495,9 @@ main > ul > li > a > img {
         display: flex;
         position: fixed;
         z-index: 1;
-        top: 7%;
+        top: 13%;
         left: 130px;
-        height: 3vh;
+        height: 5.5vh;
     }
 }
 
@@ -490,9 +510,9 @@ main > ul > li > a > img {
         display: flex;
         position: fixed;
         z-index: 1;
-        top: 7%;
+        top: 12%;
         left: 170px;
-        height: 3vh;
+        height: 6vh;
     }
 }
 
@@ -526,13 +546,18 @@ main > ul > li > a > img {
     }
     
     .toggler:checked ~ .menu {
-        width: 26%;
+        width: 27%;
     }
 
     .toggler:checked ~ .menu > div > ul {
         width: 20vw;
     }
     
+    main {
+        left: 40%;
+        top: 45%;
+    }
+
     main > ul {
         height: 40vh;
     }
@@ -560,18 +585,17 @@ main > ul > li > a > img {
         width: 30%;
     }
 
-    main {
-        left: 40%;
-        top: 30%;
+    .menu > div > ul {
+        top: 150px;
     }
 
     #id_empresa{
         display: flex;
         position: fixed;
         z-index: 1;
-        top: 7%;
+        top: 10%;
         left: 270px;
-        height: 3vh;
+        height: 4.5vh;
     }
 
     .t_menu {
@@ -580,8 +604,12 @@ main > ul > li > a > img {
 }
 
 @media screen and (min-width: 1024px) {
+    .menu {
+        width: 7vw;
+    }
+
     .toggler:checked ~ .menu {
-        width: 26%;
+        width: 19%;
     }
 
     .menu > div > ul > li > img {
@@ -589,13 +617,13 @@ main > ul > li > a > img {
     }
 
     .menu > div > ul > li > a {
-        font-size: 1.5rem;
+        font-size: 1rem;
         /* padding: 0 35px; */
     }
 
     main {
-        left: 45%;
-        top: 40%;
+        left: 20%;
+        top: 80%;
     }
 
     .action .dropdown.active {
@@ -603,18 +631,29 @@ main > ul > li > a > img {
     }
 
     .ml-auto .logo img {
-        width: 25%;
-        left: 10%;
+        width: 20%;
+        left: 8%;
+        top: 10px;
     }
 
     #id_empresa{
-        top: 7%;
-        left: 350px;
-        height: 3vh;
+        top: 15%;
+        left: 265px;
+        height: 5.5vh
     }
 
     .t_menu {
         margin-left: 15px;
+    }
+
+    main > ul {
+        flex-direction: row;
+        height: 12vh;
+        width: 80vw;
+    }
+
+    main > ul > li {
+        width: 15vw;
     }
 }
 
