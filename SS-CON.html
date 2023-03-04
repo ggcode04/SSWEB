@@ -21,9 +21,12 @@
     <!-- JQuery UI -->
     <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.css">
     <script src="jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+
+    <!-- SWEETALERT -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
-    <div class="row">
+    <div class="row" id="row_header">
         <header class="at_mainheader">
             <div class="at_header">
                 <div class="ml-auto at_headerright">
@@ -46,7 +49,7 @@
                                     <div class="profile" onclick="menuToggle();">
                                         <ul>
                                             <li>
-                                                <img src="img/icons8-user-90-yellow.png" alt="User">
+                                                <img src="img/icons8-user-90-blue.png" alt="User">
                                                 <p>User</p>
                                             </li>
                                         </ul>
@@ -74,13 +77,13 @@
     <div id="canva_cuerpo">
         <div>
             <ul>
-                <li><a href="#"><div class="t_menu" id="Opcion_Cata">Catálogos</div></a></li>
-                <li><a href="#"><div class="t_menu" id="Opcion_Movi">Movimientos</div></a></li>
-                <li><a href="#"><div class="t_menu" id="Opcion_Cierres">Cierres</div></a></li>
-                <li><a href="#"><div class="t_menu" id="Opcion_Consu">Consultas</div></a></li>
-                <li><a href="#"><div class="t_menu" id="Opcion_Bala">Balances</div></a></li>
-                <li><a href="#"><div class="t_menu" id="Opcion_Repo">Reportes</div></a></li>
-                <li><a href="#"><div class="t_menu" id="Opcion_Confi">Configuración</div></a></li>
+                <li><a href="#"><img src="img/icons8-business-building-96.png" alt="Business"><div class="t_menu" id="Opcion_Cata">Catálogos</div></a></li>
+                <li><a href="#"><img src="img/icons8-business-building-96.png" alt="Business"><div class="t_menu" id="Opcion_Movi">Movimientos</div></a></li>
+                <li><a href="#"><img src="img/icons8-business-building-96.png" alt="Business"><div class="t_menu" id="Opcion_Cierres">Cierres</div></a></li>
+                <li><a href="#"><img src="img/icons8-business-building-96.png" alt="Business"><div class="t_menu" id="Opcion_Consu">Consultas</div></a></li>
+                <li><a href="#"><img src="img/icons8-business-building-96.png" alt="Business"><div class="t_menu" id="Opcion_Bala">Balances</div></a></li>
+                <li><a href="#"><img src="img/icons8-business-building-96.png" alt="Business"><div class="t_menu" id="Opcion_Repo">Reportes</div></a></li>
+                <li><a href="#"><img src="img/icons8-business-building-96.png" alt="Business"><div class="t_menu" id="Opcion_Confi">Configuración</div></a></li>
             </ul>
         </div>
     </div>
@@ -100,7 +103,7 @@
                         <option selected>Soluciones SS</option>
                         <option value="1">Empresa #1</option>
                         <option value="2">Empresa #2</option>
-                        <option value="3">Empresa #</option>
+                        <option value="3">Empresa #3</option>
                     </select>
                 </div>
             </div>
@@ -113,25 +116,14 @@
                         <li class="nav-item">
                             <a class="nav-link active" id="op1_1" aria-current="page" href="#">Cuadro Cuentas</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Administración</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" id="op1_2" href="#">Ver el Standard</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" id="op1_3" href="#">Cargar el Standard</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" id="op1_4" href="#">Eliminar cuentas en bloque</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" id="op1_5" href="#">Renumerar</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" id="op1_6" href="#">Jalar-Pasar Excel</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="op1_2" aria-current="page" href="#">Administración</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="op1_7" aria-current="page" href="#">Integradores</a>
+                            <a class="nav-link active" id="op1_3" aria-current="page" href="#">Integradores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="op1_8" aria-current="page" href="#">Presupuesto</a>
+                            <a class="nav-link active" id="op1_4" aria-current="page" href="#">Presupuesto</a>
                         </li>
                     </ul>
                 </nav>
@@ -291,12 +283,6 @@
                 <div class="contents show" id="content_1">
                     <!--TITULOS DE TABULACION-->
                     <ul>
-                        <li id="t_tab0"><a href="#tab0">
-                            <p class="Titulo">
-                                Inicio
-                            </p>
-                        </a></li>
-
                         <!--TABS CATALOGO-->
                         <li id="t_tab1_1"><a href="#tab1_1">
                             <p class="Titulo">
@@ -305,37 +291,17 @@
                         </a></li>
                         <li id="t_tab1_2"><a href="#tab1_2">
                             <p class="Titulo">
-                                Ver el Standart <button class="b_c" id="c1_2">X</button>
+                                Administración <button class="b_c" id="c1_2">X</button>
                             </p>
                         </a></li>
                         <li id="t_tab1_3"><a href="#tab1_3">
                             <p class="Titulo">
-                                Cargar el Standard <button class="b_c" id="c1_3">X</button>
+                                Integradores <button class="b_c" id="c1_3">X</button>
                             </p>
                         </a></li>
                         <li id="t_tab1_4"><a href="#tab1_4">
                             <p class="Titulo">
-                                Eliminar Cuentas en bloque <button class="b_c" id="c1_4">X</button>
-                            </p>
-                        </a></li>
-                        <li id="t_tab1_5"><a href="#tab1_5">
-                            <p class="Titulo">
-                                Renumerar <button class="b_c" id="c1_5">X</button>
-                            </p>
-                        </a></li>
-                        <li id="t_tab1_6"><a href="#tab1_6">
-                            <p class="Titulo">
-                                Jalar-Pasar Excel <button class="b_c" id="c1_6">X</button>
-                            </p>
-                        </a></li>
-                        <li id="t_tab1_7"><a href="#tab1_7">
-                            <p class="Titulo">
-                                Integradores <button class="b_c" id="c1_7">X</button>
-                            </p>
-                        </a></li>
-                        <li id="t_tab1_8"><a href="#tab1_8">
-                            <p class="Titulo">
-                                Presupuesto <button class="b_c" id="c1_8">X</button>
+                                Presupuesto <button class="b_c" id="c1_4">X</button>
                             </p>
                         </a></li>
 
@@ -530,23 +496,14 @@
                                 Tabla de Traducción <button class="b_c" id="c7_5">X</button>
                             </p>
                         </a></li>
-
-                        <!--TABS REPORTES-->
                     </ul>
-    
-                    <!--TAB 0-->
-        
-                    <div class="c_tab" id="tab0">
-                        ¡Bienvenido! <br>
-                        Presiona una de las categorias para empezar a trabajar en ellas.
-                    </div>
         
                     <!--TABS CATALOGO-->
                     <!--TAB1_1-->
         
                     <div class="c_tab" id="tab1_1">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button id="b_nuevo" class="btn btn-primary" type="button">+ Crear Nuevo</button>
+                            <button id="b_nuevo" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#crear_nuevo">+ Crear Nuevo</button>
                         </div>
 
                         <div class="table-responsive">
@@ -630,7 +587,7 @@
                                         <td>1-15</td>
                                         <td>Operación</td>
                                         <td><button type="button" class="btn btn-primary">Editar</button> </td>
-                                        <td><button type="button" class="btn btn-danger">Danger</button> </td>
+                                        <td><button type="button" class="btn btn-danger">Eliminar</button> </td>
                                     </tr>
                                     <tr class="table-info">
                                         <th scope="row">1-15-02</th>
@@ -641,7 +598,7 @@
                                         <td>1-15</td>
                                         <td>Operación</td>
                                         <td><button type="button" class="btn btn-primary">Editar</button> </td>
-                                        <td><button type="button" class="btn btn-danger">Danger</button> </td>
+                                        <td><button type="button" class="btn btn-danger">Eliminar</button> </td>
                                     </tr>
                                     <tr class="table-info">
                                         <th scope="row">1-15-03</th>
@@ -652,7 +609,7 @@
                                         <td>1-15</td>
                                         <td>Operación</td>
                                         <td><button type="button" class="btn btn-primary">Editar</button> </td>
-                                        <td><button type="button" class="btn btn-danger">Danger</button> </td>
+                                        <td><button type="button" class="btn btn-danger">Eliminar</button> </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -661,43 +618,318 @@
         
                     <!--TAB1_2-->
                     <div class="c_tab" id="tab1_2">
-                        Segundo Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
+                        <div class="col-sm" id="admin_options">
+                            Opciones de Administración
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Importar de Excel
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Importar del Base
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Exportar
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Copiar Cuentas
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Renumerar Cuentas
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Eliminar Cuentas
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table" id="cuadro_cuenta">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th scope="col">Cuenta</th>
+                                        <th scope="col">Linea</th>
+                                        <th scope="col">CCosto</th>
+                                        <th scope="col">Porcentaje</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-info">
+                                        <th scope="row">####</th>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td>####</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">####</th>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td>####</td>
+                                    </tr>
+                                    <tr class="table-info" >
+                                        <th scope="row">####</th>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td>####</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">####</th>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td>####</td>
+                                    </tr>
+                                    <tr class="table-info">
+                                        <th scope="row">####</th>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td>####</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">####</th>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td>####</td>
+                                    </tr>
+                                    <tr class="table-info">
+                                        <th scope="row">####</th>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td>####</td>
+                                    </tr>
+                                    <tr class="table-info">
+                                        <th scope="row">####</th>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td>####</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-block">
+                            <button type="button" class="admin_button">Plantilla</button>
+                            <button type="button" class="admin_button" id="admin_button_preparar">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                </svg>
+                                Preparar
+                            </button>
+                            <button type="button" class="admin_button">Imprimir</button>
+                            <button type="button" class="admin_button">Aplicar</button>
+                        </div>
                     </div>
         
                     <!--TAB1_3-->
                     <div class="c_tab" id="tab1_3">
-                        Tercero Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
+                        <div class="row" id="int_header">
+                            <div class="col-md-2">
+                                <label for="autocompletar" class="form-label">Modulo auxiliar</label>
+                            </div>
+
+                            <div class="col-md-3" >
+                                <select class="form-select" id="select_integrador" aria-label="Default select example">
+                                    <option selected>Seleccione una opcion</option>
+                                    <option value="1">Activos Fijos</option>
+                                    <option value="2">Bancos</option>
+                                    <option value="3">Cuentas por Cobrar</option>
+                                    <option value="4">Cuentas por Pagar</option>
+                                    <option value="5">Gastos</option>
+                                    <option value="6">Inventarios</option>
+                                    <option value="7">Mercadeo</option>
+                                    <option value="8">Planillas</option>
+
+                                </select>
+                            </div>
+
+                            <div class="col-md-5"></div>
+
+                            <div class="col-md-2" >
+                                <button id="b_nuevo" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="">+ Incluir Integrador</button>
+                            </div>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table" id="cuadro_cuenta">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th scope="col">Cuenta</th>
+                                        <th scope="col">Linea</th>
+                                        <th scope="col">CCosto</th>
+                                        <th scope="col">Porcentaje</th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-info">
+                                        <th scope="row">####</th>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td><button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                          </svg>
+                                        </button> </td>
+                                        <td><button type="button" class="btn btn-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                                              </svg>
+                                        </button> </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">####</th>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td><button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                          </svg>
+                                        </button> </td>
+                                        <td><button type="button" class="btn btn-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                                              </svg>
+                                        </button> </td>
+                                    </tr>
+                                    <tr class="table-info" >
+                                        <th scope="row">####</th>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td><button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                          </svg>
+                                        </button> </td>
+                                        <td><button type="button" class="btn btn-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                                              </svg>
+                                        </button> </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">####</th>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td><button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                          </svg>
+                                        </button> </td>
+                                        <td><button type="button" class="btn btn-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                                              </svg>
+                                        </button> </td>
+                                    </tr>
+                                    <tr class="table-info">
+                                        <th scope="row">####</th>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td><button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                          </svg>
+                                        </button> </td>
+                                        <td><button type="button" class="btn btn-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                                              </svg>
+                                        </button> </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">####</th>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td><button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                          </svg>
+                                        </button> </td>
+                                        <td><button type="button" class="btn btn-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                                              </svg>
+                                        </button> </td>
+                                    </tr>
+                                    <tr class="table-info">
+                                        <th scope="row">####</th>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td><button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                          </svg>
+                                        </button> </td>
+                                        <td><button type="button" class="btn btn-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                                              </svg>
+                                        </button> </td>
+                                    </tr>
+                                    <tr class="table-info">
+                                        <th scope="row">####</th>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td>####</td>
+                                        <td><button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                          </svg>
+                                        </button> </td>
+                                        <td><button type="button" class="btn btn-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                                              </svg>
+                                        </button> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
         
                     <!--TAB1_4-->
                     <div class="c_tab" id="tab1_4">
                         Cuarto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-                    </div>
-        
-                    <!--TAB1_5-->
-                    <div class="c_tab" id="tab1_5">
-                        Quinto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-                    </div>
-        
-                    <!--TAB1_6-->
-                    <div class="c_tab" id="tab1_6">
-                        Sexto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-                    </div>
-
-                    <!--TAB1_7-->
-                    <div class="c_tab" id="tab1_7">
-                        Sexto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
-                        veniam laudantium eum consectetur inventore optio fuga quo sunt!
-                    </div>
-
-                    <!--TAB1_8-->
-                    <div class="c_tab" id="tab1_8">
-                        Sexto Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates aliquam, 
                         veniam laudantium eum consectetur inventore optio fuga quo sunt!
                     </div>
 
@@ -898,10 +1130,125 @@
     </div>
 
 
+    <div class="modal fade" id="crear_nuevo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <form class="row g-3" id="form_cn">
+                <div class="modal-content">
+                    <div id="h_modal_cn">
+                        <div class="l_azul"></div>
+                        <div class="l_amarrillo"></div>
+    
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5">Crear Nueva Cuenta</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+    
+                    <div class="modal-body" id="m_cuerpo_crearnuevo">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3 ms-auto">Código</div>
+                                <div class="col-md-9 ms-auto" id="m_codigo">
+                                    <input class="form-control form-control-sm" type="text"  aria-label=".form-control-sm example" required>
+                                    <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" required>
+                                    <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" required>
+                                    <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" required>
+                                    <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 ms-auto">Descripción</div>
+                                <div class="col-md-9 ms-auto"><input class="form-control form-control-sm" type="text" placeholder="Indique una descripción..." aria-label=".form-control-sm example" required></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 ms-auto">Descripción Alterna</div>
+                                <div class="col-md-9 ms-auto"><input class="form-control form-control-sm" type="text"  aria-label=".form-control-sm example"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm" id="tipo_cuenta">
+                                    Tipo de Cuenta
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Etiqueta
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-sm-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Mayor
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Posteo
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Total
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-sm-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Resultados
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Utiliza centro de Costo
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 ms-auto">Detalle de la cuenta</div>
+                                <div class="col-md-9 ms-auto" id="m_codigo">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div id="f_modal_cn">
+                        <div class="modal-footer" >
+                            <img id="modal_logo" src="img/SSPyMes.png" alt="">
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+    
+                        <div class="l_amarrillo_abajo"></div>
+                        <div class="l_azul_abajo"></div>
+                    </div>
+                </div>     
+            </form>
+            
+        </div>
+      </div>
+
     
 
-
-
+    
 
     <script src="js/general.js"></script>
     <script src="js/SS-CON.js"></script>
