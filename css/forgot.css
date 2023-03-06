@@ -74,7 +74,8 @@ body {
 .row .form-group input:focus, .row .form-group button:focus {
 	background-color: #fff;
 	border: none;
-	padding: 1em 0.5em; animation: pulse 1s infinite ease;
+	padding: 1em 0.5em; 
+	animation: pulse 1s infinite ease;
 }
 
 .row .form-group button {
@@ -103,6 +104,7 @@ body {
 	border-left-color: transparent;
 	height: 1em;
 	width: 4%; }
+
 .row .footer h5 {
 	margin-top: 1em; 
 }
@@ -111,7 +113,7 @@ body {
 	margin-top: 2em; 
 }
 
-	.row .footer p .symbols {
+.row .footer p .symbols {
 	color: #444; 
 }
 
@@ -130,8 +132,23 @@ body {
 	border: solid 4px rgb(0, 126, 176);
 	width: 300px;
 	margin-bottom: 20px;
-  }
-  
+}
+
+@media screen and (max-width: 280px) {
+	.logo img {
+		width: 200px;
+	}
+
+	.row h1 {
+		font-size: 1.5rem;
+	}
+
+	.row .form-group {
+		margin-left: 10px;
+		width: 90%;
+	}
+}
+
 @media screen and (min-width: 320px) {
 	.row {
 		padding-left: 1em;
@@ -142,12 +159,50 @@ body {
 		font-size: 1.5em; 
 	} 
 
+	.row .form-group {
+		margin-left: 15px;
+		width: 75vw;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+	.row .form-group {
+		margin-left: 150px;
+		width: 50vw;
+	}
+}
+
+@media screen and (min-width: 912px) {
+
+	.row .form-group {
+		margin-left: 255px;
+		width: 30vw;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.row .form-group {
+		margin-left: 370px;
+		width: 30vw;
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.row .form-group {
+		margin-left: 400px;
+	}
 }
 
 @media screen and (min-width: 1920px) {
 	.row {
 	  width: 35%; 
 	} 
+
+	.row .form-group {
+		margin-left: 155px;
+		width: 17vw;
+	}
 
 }
 
@@ -157,7 +212,8 @@ body {
 	}
 
 	.row .form-group{
-		margin-left: 25%;
+		margin-left: 20%;
+		width: 14vw;
 	}
 }
   
