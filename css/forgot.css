@@ -128,10 +128,11 @@ body {
 
 .logo img {
 	background-color: white;
-	border-radius: 50px;
+	border-radius: 25px;
 	border: solid 4px rgb(0, 126, 176);
 	width: 300px;
 	margin-bottom: 20px;
+	padding: 5px;
 }
 
 @media screen and (max-width: 280px) {

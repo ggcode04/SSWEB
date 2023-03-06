@@ -622,8 +622,8 @@ main > ul > li > a > img {
     }
 
     main {
-        left: 20%;
-        top: 80%;
+        left: 25%;
+        top: 85%;
     }
 
     .action .dropdown.active {
@@ -637,8 +637,8 @@ main > ul > li > a > img {
     }
 
     #id_empresa{
-        top: 15%;
-        left: 265px;
+        top: 11%;
+        left: 45px;
         height: 5.5vh
     }
 
@@ -649,11 +649,94 @@ main > ul > li > a > img {
     main > ul {
         flex-direction: row;
         height: 12vh;
-        width: 80vw;
+        width: 65vw;
     }
 
     main > ul > li {
-        width: 15vw;
+        width: 12vw;
+    }
+
+    .headerBusiness {
+        padding: 10px;
+        position: fixed;
+        top: 6vw;
+        border-bottom: 3px solid rgb(0, 126, 176);;
+        width: 100vw;
+    }
+
+    .headerBusiness > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-align: center;
+        margin: 0;
+    }
+
+    .headerBusiness > ul > li {
+        width: 16%;
+        text-transform: uppercase;
+    }
+
+    .headerBusiness > ul > li > a {
+        cursor: pointer;
+        color: rgb(0, 126, 176);
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .empresas{
+        border-radius: 5px;
+        background-color: white;
+        width: 70vw;
+        height: 69vh;
+        position: absolute;
+        top: 17%;
+        left: 22.8%;
+        /* display: none; */
+    }
+
+    .empresas > .searchBusiness {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .empresas > .searchBusiness > div > input[type="search"] {
+        width: 10vw;
+        border-radius: 5px;
+        padding: 4px 10px;
+        border: solid 1px black;
+    }
+
+    .empresas > .searchBusiness > div > button {
+        cursor: pointer;
+        padding: 4px 10px;
+        border-radius: 5px;
+        border: 0px;
+        background-color: #0c59a7;
+        color: white;
+    }
+
+    .empresas > .contentBusiness {
+        margin: 0 20px 0 20px;
+        width: 68.5vw;
+        height: 52.5vh;
+        border-radius: 5px;
+    }
+
+    .contentBusiness .table {
+        margin: 0;
+    }
+
+    nav > .pagination {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    nav > .pagination > li {
+        font-size: 20px;
     }
 }
 
@@ -760,7 +843,7 @@ main > ul > li > a > img {
     }
 
     main {
-        top: 80%;
+        top: 90%;
         left: 20%;
     }
     
@@ -905,24 +988,15 @@ main > ul > li > a > img {
         height: 4.5%;
     }
 
-    .empresas{
-        border-radius: 5px;
-        background-color: white;
-        width: 70vw;
-        height: 69vh;
-        position: absolute;
-        top: 10%;
-        left: 22.8%;
-        /* display: none; */
-    }
-
-    .empresas > .headerBusiness {
-        border-radius: 5px;
-        background-color: #339af0;
+    .headerBusiness {
         padding: 15px;
+        position: fixed;
+        top: 4vw;
+        border-bottom: 3px solid rgb(0, 126, 176);;
+        width: 100vw;
     }
 
-    .empresas > .headerBusiness > ul {
+    .headerBusiness > ul {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -930,16 +1004,27 @@ main > ul > li > a > img {
         margin: 0;
     }
 
-    .empresas > .headerBusiness > ul > li {
-        width: 20%;
+    .headerBusiness > ul > li {
+        width: 12%;
         text-transform: uppercase;
     }
 
-    .empresas > .headerBusiness > ul > li > a {
+    .headerBusiness > ul > li > a {
         cursor: pointer;
-        color: white;
+        color: rgb(0, 126, 176);
         font-size: 15px;
         text-decoration: none;
+    }
+
+    .empresas{
+        border-radius: 5px;
+        background-color: white;
+        width: 70vw;
+        height: 69vh;
+        position: absolute;
+        top: 15%;
+        left: 22.8%;
+        /* display: none; */
     }
 
     .empresas > .searchBusiness {
@@ -967,7 +1052,7 @@ main > ul > li > a > img {
     .empresas > .contentBusiness {
         margin: 0 20px 0 20px;
         width: 68.5vw;
-        height: 49.7vh;
+        height: 55.5vh;
         border-radius: 5px;
     }
 
@@ -1183,39 +1268,13 @@ main > ul > li > a > img {
         width: 70vw;
         height: 60vh;
         position: absolute;
-        top: 10%;
+        top: 15%;
         left: 22.4%;
         /* display: none; */
     }
 
     .empresas::before {
         display: block;
-    }
-
-    .empresas > .headerBusiness {
-        border-radius: 5px;
-        background-color: #339af0;
-        padding: 20px;
-    }
-
-    .empresas > .headerBusiness > ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        text-align: center;
-        margin: 0;
-    }
-
-    .empresas > .headerBusiness > ul > li {
-        width: 15%;
-        text-transform: uppercase;
-    }
-
-    .empresas > .headerBusiness > ul > li > a {
-        cursor: pointer;
-        color: white;
-        font-size: 15px;
-        text-decoration: none;
     }
 
     .empresas > .searchBusiness {
@@ -1260,5 +1319,33 @@ main > ul > li > a > img {
     
     nav > .pagination > li {
         font-size: 20px;
+    }
+
+    .headerBusiness {
+        padding: 10px;
+        position: fixed;
+        top: 4vw;
+        border-bottom: 3px solid rgb(0, 126, 176);;
+        width: 100vw;
+    }
+
+    .headerBusiness > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-align: center;
+        margin: 0;
+    }
+
+    .headerBusiness > ul > li {
+        width: 10%;
+        text-transform: uppercase;
+    }
+
+    .headerBusiness > ul > li > a {
+        cursor: pointer;
+        color: rgb(0, 126, 176);
+        font-size: 15px;
+        text-decoration: none;
     }
 }
