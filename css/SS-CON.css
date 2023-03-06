@@ -525,4 +525,34 @@ label{
 #int_header{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#m_body_integrador .row{
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+#m_sel_int{
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 5px;
+    color: black;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+#m_int_credito{
+    display: flex;
+}
+
+.detalle_contable{
+    border: 2px solid rgb(0, 126, 176);
+    padding: 10px;
+}
+
+#lis_integrador{
+    margin-top: 80px;
+}
+
+#m_int_tabla{
+    border: 2px solid rgb(4, 46, 63);
 }
