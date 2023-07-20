@@ -69,3 +69,7 @@ $('#form_login').submit( function (e) {
 });
 const admin = admin
 const user = costumer
+
+const botonEnviar = document.getElementById('b_enviar')
+
+botonEnviar.value = 'Enviar'
